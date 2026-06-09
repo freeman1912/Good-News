@@ -73,6 +73,68 @@ leadGroups:
           - site:cyol.com 志愿者 公益 青年
           - site:cyol.com 助学 支教 社区
 
+  - id: chinese-media-watch
+    label: Chinese media watch pool
+    priority: medium
+    sourceRole: discovery
+    sources:
+      - id: sanlian-lifeweek
+        name: 三联生活周刊
+        url: https://www.lifeweek.com.cn/
+        queryHints:
+          - site:lifeweek.com.cn 公益 项目 帮助
+          - site:lifeweek.com.cn 医疗 教育 改善
+          - site:lifeweek.com.cn 城市 社区 治理
+      - id: caixin
+        name: 财新
+        url: https://www.caixin.com/
+        queryHints:
+          - site:caixin.com 医疗 改革 改善
+          - site:caixin.com 公共服务 民生 改善
+          - site:caixin.com 科研 突破 医药
+      - id: jiemian
+        name: 界面新闻
+        url: https://www.jiemian.com/
+        queryHints:
+          - site:jiemian.com 公益 项目 社区
+          - site:jiemian.com 环保 修复 保护
+          - site:jiemian.com 科技 医疗 突破
+      - id: china-news-weekly
+        name: 中国新闻周刊
+        url: https://www.inewsweek.cn/
+        queryHints:
+          - site:inewsweek.cn 公益 救助 社区
+          - site:inewsweek.cn 医疗 教育 改善
+          - site:inewsweek.cn 人物 志愿者
+      - id: daily-people
+        name: 每日人物
+        url: https://www.dailypeople.com.cn/
+        queryHints:
+          - site:dailypeople.com.cn 好人 志愿者
+          - site:dailypeople.com.cn 帮助 救助 人物
+          - site:dailypeople.com.cn 公益 项目
+      - id: yicai
+        name: 第一财经
+        url: https://www.yicai.com/
+        queryHints:
+          - site:yicai.com 医疗 科技 突破
+          - site:yicai.com 绿色 能源 改善
+          - site:yicai.com 公共服务 民生
+      - id: economic-observer
+        name: 经济观察网
+        url: https://www.eeo.com.cn/
+        queryHints:
+          - site:eeo.com.cn 公益 项目 改善
+          - site:eeo.com.cn 教育 医疗 民生
+          - site:eeo.com.cn 环境 绿色 修复
+      - id: chinanews-watch
+        name: 中国新闻网
+        url: https://www.chinanews.com.cn/
+        queryHints:
+          - site:chinanews.com.cn 公益 项目 回访
+          - site:chinanews.com.cn 医疗 救助 改善
+          - site:chinanews.com.cn 志愿者 社区 帮扶
+
   - id: video-leads
     label: Chinese video/social leads
     priority: watch
@@ -122,4 +184,3 @@ verificationRules:
     - commercial or creator traffic bait
     - unverifiable touching story
     - slogan-style positive-energy item
-

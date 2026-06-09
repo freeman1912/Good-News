@@ -15,6 +15,31 @@ DeepSeek, OpenAI, or another compatible model is only useful for the ingestion a
 
 Without an API key, the project should use manual curation: fetch links, read candidates, write Chinese summaries by hand, then publish with `pnpm ingest:publish-manual -- --date YYYY-MM-DD`.
 
+## Input Discovery vs Reader RSS
+
+RSS is a first-class reader-facing output, not a requirement for every upstream
+source.
+
+Reader-facing output:
+
+- `/rss.xml`
+- topic RSS feeds
+- future daily good-news RSS digest
+
+Upstream discovery can use many methods:
+
+- RSS feeds when a source has a stable feed;
+- media homepage/category page discovery;
+- site search and web search queries;
+- source-specific scraping of public listing pages;
+- newsletters and public-account links submitted by readers;
+- reader-submitted leads;
+- self-hosted adapters such as RSSHub when a route is stable.
+
+The project should not force Chinese media into RSS-only ingestion. For Chinese
+sources, title/link discovery plus conservative review is often more realistic
+than trying to find a perfect feed for every outlet.
+
 ## Candidate Source Tiers
 
 ### Tier A · Editorial Good-News and Constructive-News Sources
@@ -67,6 +92,34 @@ There is not yet a stable Chinese Tier A equivalent to Positive News or Reasons 
 - 财新健康: health and public-service reporting leads.
 - 南方周末: public-interest reporting discovery.
 - 澎湃新闻: broad discovery only; warm/positive columns are high-risk and need extra caution.
+
+Chinese media discovery should be broader than the first watch pool, but still
+not auto-publishing. The first media watch list can include:
+
+- 南方周末: public-interest and social reporting discovery.
+- 三联生活周刊: longform social, cultural, city, and public-life reporting.
+- 财新 / 财新健康: health, public-service, economy, and institutional-change leads.
+- 界面新闻: business, city, public-service, technology, and culture leads.
+- 中国新闻周刊: social, public-interest, and people/project leads, with official-risk caution.
+- 每日人物: human stories and person leads, but verify carefully because narrative pieces may not have enough evidence.
+- 第一财经 / 经济观察网: policy, business, environment, technology, and public-service improvement leads.
+- 中国新闻网: broad RSS-capable discovery source, but official-risk and propaganda-tone filters must be strict.
+
+Treat this as a title-and-claim discovery lane, not an RSS-only lane:
+
+```text
+Chinese media watch pool
+-> title/summary keyword screen
+-> AI extracts claim, source type, people/place/date/action/result
+-> reject opinion-only, slogan, ceremony, disaster-heavy, and promotional items
+-> verify with original/primary/secondary sources
+-> only then draft a published item
+```
+
+Direct RSS is welcome when it exists, but Chinese media RSS coverage is uneven.
+Use official RSS endpoints first, then search/manual discovery, then RSSHub only
+as an optional self-hosted adapter when the route is stable. Public RSSHub
+instances should not become the only production dependency.
 
 These sources are not daily auto-ingestion sources yet. Use them through manual search, reader submissions, or later search APIs. Publish only after original links and claims are checked.
 

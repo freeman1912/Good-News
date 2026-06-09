@@ -12,6 +12,7 @@
     "typecheck": "astro check",
     "ingest:fetch": "tsx scripts/ingest/fetch-feeds.ts",
     "ingest:score": "tsx scripts/ingest/score-candidates.ts",
+    "ingest:export-scored": "tsx scripts/ingest/export-scored.ts",
     "ingest:publish": "tsx scripts/ingest/publish.ts",
     "ingest:publish-manual": "tsx scripts/ingest/publish-manual.ts",
     "ingest:china-leads": "tsx scripts/ingest/generate-china-leads.ts",

@@ -53,6 +53,21 @@ $env:INGEST_REROUTE_ONLY="true"
 npx pnpm ingest:score
 ```
 
+After a full scoring run, export the review pools without calling the AI
+provider:
+
+```powershell
+$env:INGEST_DATE="YYYY-MM-DD"
+npx pnpm ingest:export-scored
+```
+
+This writes:
+
+- `data/candidates/YYYY-MM-DD.json`
+- `data/rejected/YYYY-MM-DD.json`
+
+Use these files for manual review. They are not published content.
+
 ## Cloudflare Pages
 
 Recommended settings:

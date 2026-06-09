@@ -1,0 +1,3650 @@
+[
+  {
+    "id": "public-good-primary-china-development-brief-site-chinadevelopmentbrief-org-cn-公益",
+    "groupId": "public-good-primary",
+    "groupLabel": "Primary public-good evidence sources",
+    "priority": "high",
+    "sourceRole": "evidence",
+    "sourceId": "china-development-brief",
+    "sourceName": "中国发展简报 / NGO信息中心",
+    "sourceUrl": "https://www.chinadevelopmentbrief.org.cn/",
+    "query": "site:chinadevelopmentbrief.org.cn 公益 项目",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-good-primary-china-development-brief-site-chinadevelopmentbrief-org-cn-志愿",
+    "groupId": "public-good-primary",
+    "groupLabel": "Primary public-good evidence sources",
+    "priority": "high",
+    "sourceRole": "evidence",
+    "sourceId": "china-development-brief",
+    "sourceName": "中国发展简报 / NGO信息中心",
+    "sourceUrl": "https://www.chinadevelopmentbrief.org.cn/",
+    "query": "site:chinadevelopmentbrief.org.cn 志愿者 社区",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-good-primary-china-development-brief-site-chinadevelopmentbrief-org-cn-儿童",
+    "groupId": "public-good-primary",
+    "groupLabel": "Primary public-good evidence sources",
+    "priority": "high",
+    "sourceRole": "evidence",
+    "sourceId": "china-development-brief",
+    "sourceName": "中国发展简报 / NGO信息中心",
+    "sourceUrl": "https://www.chinadevelopmentbrief.org.cn/",
+    "query": "site:chinadevelopmentbrief.org.cn 儿童 教育 公益",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-good-primary-friends-of-nature-site-fon-org-cn-保护-修复-志愿者",
+    "groupId": "public-good-primary",
+    "groupLabel": "Primary public-good evidence sources",
+    "priority": "high",
+    "sourceRole": "evidence",
+    "sourceId": "friends-of-nature",
+    "sourceName": "自然之友",
+    "sourceUrl": "https://www.fon.org.cn/",
+    "query": "site:fon.org.cn 保护 修复 志愿者",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-good-primary-friends-of-nature-site-fon-org-cn-环境-公益-项目",
+    "groupId": "public-good-primary",
+    "groupLabel": "Primary public-good evidence sources",
+    "priority": "high",
+    "sourceRole": "evidence",
+    "sourceId": "friends-of-nature",
+    "sourceName": "自然之友",
+    "sourceUrl": "https://www.fon.org.cn/",
+    "query": "site:fon.org.cn 环境 公益 项目",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-good-primary-tencent-charity-site-gongyi-qq-com-项目进展-公益",
+    "groupId": "public-good-primary",
+    "groupLabel": "Primary public-good evidence sources",
+    "priority": "high",
+    "sourceRole": "evidence",
+    "sourceId": "tencent-charity",
+    "sourceName": "腾讯公益",
+    "sourceUrl": "https://gongyi.qq.com/",
+    "query": "site:gongyi.qq.com 项目进展 公益",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-good-primary-tencent-charity-site-gongyi-qq-com-助学-救助-反馈",
+    "groupId": "public-good-primary",
+    "groupLabel": "Primary public-good evidence sources",
+    "priority": "high",
+    "sourceRole": "evidence",
+    "sourceId": "tencent-charity",
+    "sourceName": "腾讯公益",
+    "sourceUrl": "https://gongyi.qq.com/",
+    "query": "site:gongyi.qq.com 助学 救助 反馈",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-good-primary-weibo-charity-site-gongyi-weibo-com-公益-项目",
+    "groupId": "public-good-primary",
+    "groupLabel": "Primary public-good evidence sources",
+    "priority": "high",
+    "sourceRole": "evidence",
+    "sourceId": "weibo-charity",
+    "sourceName": "微公益",
+    "sourceUrl": "https://gongyi.weibo.com/",
+    "query": "site:gongyi.weibo.com 公益 项目",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-good-primary-weibo-charity-site-gongyi-weibo-com-救助-反馈",
+    "groupId": "public-good-primary",
+    "groupLabel": "Primary public-good evidence sources",
+    "priority": "high",
+    "sourceRole": "evidence",
+    "sourceId": "weibo-charity",
+    "sourceName": "微公益",
+    "sourceUrl": "https://gongyi.weibo.com/",
+    "query": "site:gongyi.weibo.com 救助 反馈",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-good-primary-byte-dance-charity-site-gongyi-bytedance-com-公益-项目",
+    "groupId": "public-good-primary",
+    "groupLabel": "Primary public-good evidence sources",
+    "priority": "high",
+    "sourceRole": "evidence",
+    "sourceId": "byte-dance-charity",
+    "sourceName": "字节跳动公益",
+    "sourceUrl": "https://gongyi.bytedance.com/",
+    "query": "site:gongyi.bytedance.com 公益 项目",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-good-primary-byte-dance-charity-site-gongyi-bytedance-com-志愿者-反馈",
+    "groupId": "public-good-primary",
+    "groupLabel": "Primary public-good evidence sources",
+    "priority": "high",
+    "sourceRole": "evidence",
+    "sourceId": "byte-dance-charity",
+    "sourceName": "字节跳动公益",
+    "sourceUrl": "https://gongyi.bytedance.com/",
+    "query": "site:gongyi.bytedance.com 志愿者 反馈",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-interest-media-caixin-health-site-health-caixin-com-医疗-突破-公益",
+    "groupId": "public-interest-media",
+    "groupLabel": "Chinese public-interest reporting",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "caixin-health",
+    "sourceName": "财新健康",
+    "sourceUrl": "https://health.caixin.com/",
+    "query": "site:health.caixin.com 医疗 突破 公益",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-interest-media-caixin-health-site-health-caixin-com-罕见病-救助-改善",
+    "groupId": "public-interest-media",
+    "groupLabel": "Chinese public-interest reporting",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "caixin-health",
+    "sourceName": "财新健康",
+    "sourceUrl": "https://health.caixin.com/",
+    "query": "site:health.caixin.com 罕见病 救助 改善",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-interest-media-infzm-site-infzm-com-公益-救助-社区",
+    "groupId": "public-interest-media",
+    "groupLabel": "Chinese public-interest reporting",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "infzm",
+    "sourceName": "南方周末",
+    "sourceUrl": "https://www.infzm.com/",
+    "query": "site:infzm.com 公益 救助 社区",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-interest-media-infzm-site-infzm-com-环保-修复-公共服务",
+    "groupId": "public-interest-media",
+    "groupLabel": "Chinese public-interest reporting",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "infzm",
+    "sourceName": "南方周末",
+    "sourceUrl": "https://www.infzm.com/",
+    "query": "site:infzm.com 环保 修复 公共服务",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-interest-media-thepaper-site-thepaper-cn-公益-志愿者-救助",
+    "groupId": "public-interest-media",
+    "groupLabel": "Chinese public-interest reporting",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "thepaper",
+    "sourceName": "澎湃新闻",
+    "sourceUrl": "https://www.thepaper.cn/",
+    "query": "site:thepaper.cn 公益 志愿者 救助",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-interest-media-thepaper-site-thepaper-cn-科研-突破-医疗",
+    "groupId": "public-interest-media",
+    "groupLabel": "Chinese public-interest reporting",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "thepaper",
+    "sourceName": "澎湃新闻",
+    "sourceUrl": "https://www.thepaper.cn/",
+    "query": "site:thepaper.cn 科研 突破 医疗",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-interest-media-thepaper-site-thepaper-cn-环境-修复-保护",
+    "groupId": "public-interest-media",
+    "groupLabel": "Chinese public-interest reporting",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "thepaper",
+    "sourceName": "澎湃新闻",
+    "sourceUrl": "https://www.thepaper.cn/",
+    "query": "site:thepaper.cn 环境 修复 保护",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-interest-media-cyol-site-cyol-com-志愿者-公益-青年",
+    "groupId": "public-interest-media",
+    "groupLabel": "Chinese public-interest reporting",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "cyol",
+    "sourceName": "中国青年报",
+    "sourceUrl": "https://www.cyol.com/",
+    "query": "site:cyol.com 志愿者 公益 青年",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "public-interest-media-cyol-site-cyol-com-助学-支教-社区",
+    "groupId": "public-interest-media",
+    "groupLabel": "Chinese public-interest reporting",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "cyol",
+    "sourceName": "中国青年报",
+    "sourceUrl": "https://www.cyol.com/",
+    "query": "site:cyol.com 助学 支教 社区",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-sanlian-lifeweek-site-lifeweek-com-cn-公益-项目-帮助",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "sanlian-lifeweek",
+    "sourceName": "三联生活周刊",
+    "sourceUrl": "https://www.lifeweek.com.cn/",
+    "query": "site:lifeweek.com.cn 公益 项目 帮助",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-sanlian-lifeweek-site-lifeweek-com-cn-医疗-教育-改善",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "sanlian-lifeweek",
+    "sourceName": "三联生活周刊",
+    "sourceUrl": "https://www.lifeweek.com.cn/",
+    "query": "site:lifeweek.com.cn 医疗 教育 改善",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-sanlian-lifeweek-site-lifeweek-com-cn-城市-社区-治理",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "sanlian-lifeweek",
+    "sourceName": "三联生活周刊",
+    "sourceUrl": "https://www.lifeweek.com.cn/",
+    "query": "site:lifeweek.com.cn 城市 社区 治理",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-caixin-site-caixin-com-医疗-改革-改善",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "caixin",
+    "sourceName": "财新",
+    "sourceUrl": "https://www.caixin.com/",
+    "query": "site:caixin.com 医疗 改革 改善",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-caixin-site-caixin-com-公共服务-民生-改善",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "caixin",
+    "sourceName": "财新",
+    "sourceUrl": "https://www.caixin.com/",
+    "query": "site:caixin.com 公共服务 民生 改善",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-caixin-site-caixin-com-科研-突破-医药",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "caixin",
+    "sourceName": "财新",
+    "sourceUrl": "https://www.caixin.com/",
+    "query": "site:caixin.com 科研 突破 医药",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-jiemian-site-jiemian-com-公益-项目-社区",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "jiemian",
+    "sourceName": "界面新闻",
+    "sourceUrl": "https://www.jiemian.com/",
+    "query": "site:jiemian.com 公益 项目 社区",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-jiemian-site-jiemian-com-环保-修复-保护",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "jiemian",
+    "sourceName": "界面新闻",
+    "sourceUrl": "https://www.jiemian.com/",
+    "query": "site:jiemian.com 环保 修复 保护",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-jiemian-site-jiemian-com-科技-医疗-突破",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "jiemian",
+    "sourceName": "界面新闻",
+    "sourceUrl": "https://www.jiemian.com/",
+    "query": "site:jiemian.com 科技 医疗 突破",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-china-news-weekly-site-inewsweek-cn-公益-救助-社区",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "china-news-weekly",
+    "sourceName": "中国新闻周刊",
+    "sourceUrl": "https://www.inewsweek.cn/",
+    "query": "site:inewsweek.cn 公益 救助 社区",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-china-news-weekly-site-inewsweek-cn-医疗-教育-改善",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "china-news-weekly",
+    "sourceName": "中国新闻周刊",
+    "sourceUrl": "https://www.inewsweek.cn/",
+    "query": "site:inewsweek.cn 医疗 教育 改善",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-china-news-weekly-site-inewsweek-cn-人物-志愿者",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "china-news-weekly",
+    "sourceName": "中国新闻周刊",
+    "sourceUrl": "https://www.inewsweek.cn/",
+    "query": "site:inewsweek.cn 人物 志愿者",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-daily-people-site-dailypeople-com-cn-好人-志愿者",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "daily-people",
+    "sourceName": "每日人物",
+    "sourceUrl": "https://www.dailypeople.com.cn/",
+    "query": "site:dailypeople.com.cn 好人 志愿者",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-daily-people-site-dailypeople-com-cn-帮助-救助-人物",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "daily-people",
+    "sourceName": "每日人物",
+    "sourceUrl": "https://www.dailypeople.com.cn/",
+    "query": "site:dailypeople.com.cn 帮助 救助 人物",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-daily-people-site-dailypeople-com-cn-公益-项目",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "daily-people",
+    "sourceName": "每日人物",
+    "sourceUrl": "https://www.dailypeople.com.cn/",
+    "query": "site:dailypeople.com.cn 公益 项目",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-yicai-site-yicai-com-医疗-科技-突破",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "yicai",
+    "sourceName": "第一财经",
+    "sourceUrl": "https://www.yicai.com/",
+    "query": "site:yicai.com 医疗 科技 突破",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-yicai-site-yicai-com-绿色-能源-改善",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "yicai",
+    "sourceName": "第一财经",
+    "sourceUrl": "https://www.yicai.com/",
+    "query": "site:yicai.com 绿色 能源 改善",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-yicai-site-yicai-com-公共服务-民生",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "yicai",
+    "sourceName": "第一财经",
+    "sourceUrl": "https://www.yicai.com/",
+    "query": "site:yicai.com 公共服务 民生",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-economic-observer-site-eeo-com-cn-公益-项目-改善",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "economic-observer",
+    "sourceName": "经济观察网",
+    "sourceUrl": "https://www.eeo.com.cn/",
+    "query": "site:eeo.com.cn 公益 项目 改善",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-economic-observer-site-eeo-com-cn-教育-医疗-民生",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "economic-observer",
+    "sourceName": "经济观察网",
+    "sourceUrl": "https://www.eeo.com.cn/",
+    "query": "site:eeo.com.cn 教育 医疗 民生",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-economic-observer-site-eeo-com-cn-环境-绿色-修复",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "economic-observer",
+    "sourceName": "经济观察网",
+    "sourceUrl": "https://www.eeo.com.cn/",
+    "query": "site:eeo.com.cn 环境 绿色 修复",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-chinanews-watch-site-chinanews-com-cn-公益-项目-回访",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "chinanews-watch",
+    "sourceName": "中国新闻网",
+    "sourceUrl": "https://www.chinanews.com.cn/",
+    "query": "site:chinanews.com.cn 公益 项目 回访",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-chinanews-watch-site-chinanews-com-cn-医疗-救助-改善",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "chinanews-watch",
+    "sourceName": "中国新闻网",
+    "sourceUrl": "https://www.chinanews.com.cn/",
+    "query": "site:chinanews.com.cn 医疗 救助 改善",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "chinese-media-watch-chinanews-watch-site-chinanews-com-cn-志愿者-社区-帮扶",
+    "groupId": "chinese-media-watch",
+    "groupLabel": "Chinese media watch pool",
+    "priority": "medium",
+    "sourceRole": "discovery",
+    "sourceId": "chinanews-watch",
+    "sourceName": "中国新闻网",
+    "sourceUrl": "https://www.chinanews.com.cn/",
+    "query": "site:chinanews.com.cn 志愿者 社区 帮扶",
+    "negativeHints": [],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-抖音-好人好事-原视频-地点-时间",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "抖音",
+    "query": "抖音 好人好事 原视频 地点 时间",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-抖音-志愿者-帮助-老人-社区-原视频",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "抖音",
+    "query": "抖音 志愿者 帮助 老人 社区 原视频",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-抖音-救助-走失老人-找回-原视频",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "抖音",
+    "query": "抖音 救助 走失老人 找回 原视频",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-抖音-公益-助学-反馈-学生",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "抖音",
+    "query": "抖音 公益 助学 反馈 学生",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-抖音-环保-志愿者-清理-河道",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "抖音",
+    "query": "抖音 环保 志愿者 清理 河道",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-抖音-流浪动物-救助-回访",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "抖音",
+    "query": "抖音 流浪动物 救助 回访",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-抖音-无障碍-改造-社区-帮扶",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "抖音",
+    "query": "抖音 无障碍 改造 社区 帮扶",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-抖音-见义勇为-后续-核实",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "抖音",
+    "query": "抖音 见义勇为 后续 核实",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-快手-好人好事-原视频-地点-时间",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "快手",
+    "query": "快手 好人好事 原视频 地点 时间",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-快手-志愿者-帮助-老人-社区-原视频",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "快手",
+    "query": "快手 志愿者 帮助 老人 社区 原视频",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-快手-救助-走失老人-找回-原视频",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "快手",
+    "query": "快手 救助 走失老人 找回 原视频",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-快手-公益-助学-反馈-学生",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "快手",
+    "query": "快手 公益 助学 反馈 学生",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-快手-环保-志愿者-清理-河道",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "快手",
+    "query": "快手 环保 志愿者 清理 河道",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-快手-流浪动物-救助-回访",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "快手",
+    "query": "快手 流浪动物 救助 回访",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-快手-无障碍-改造-社区-帮扶",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "快手",
+    "query": "快手 无障碍 改造 社区 帮扶",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-快手-见义勇为-后续-核实",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "快手",
+    "query": "快手 见义勇为 后续 核实",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微信视频号-好人好事-原视频-地点-时间",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微信视频号",
+    "query": "微信视频号 好人好事 原视频 地点 时间",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微信视频号-志愿者-帮助-老人-社区-原视频",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微信视频号",
+    "query": "微信视频号 志愿者 帮助 老人 社区 原视频",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微信视频号-救助-走失老人-找回-原视频",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微信视频号",
+    "query": "微信视频号 救助 走失老人 找回 原视频",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微信视频号-公益-助学-反馈-学生",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微信视频号",
+    "query": "微信视频号 公益 助学 反馈 学生",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微信视频号-环保-志愿者-清理-河道",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微信视频号",
+    "query": "微信视频号 环保 志愿者 清理 河道",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微信视频号-流浪动物-救助-回访",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微信视频号",
+    "query": "微信视频号 流浪动物 救助 回访",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微信视频号-无障碍-改造-社区-帮扶",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微信视频号",
+    "query": "微信视频号 无障碍 改造 社区 帮扶",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微信视频号-见义勇为-后续-核实",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微信视频号",
+    "query": "微信视频号 见义勇为 后续 核实",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微博-好人好事-原视频-地点-时间",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微博",
+    "query": "微博 好人好事 原视频 地点 时间",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微博-志愿者-帮助-老人-社区-原视频",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微博",
+    "query": "微博 志愿者 帮助 老人 社区 原视频",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微博-救助-走失老人-找回-原视频",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微博",
+    "query": "微博 救助 走失老人 找回 原视频",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微博-公益-助学-反馈-学生",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微博",
+    "query": "微博 公益 助学 反馈 学生",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微博-环保-志愿者-清理-河道",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微博",
+    "query": "微博 环保 志愿者 清理 河道",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微博-流浪动物-救助-回访",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微博",
+    "query": "微博 流浪动物 救助 回访",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微博-无障碍-改造-社区-帮扶",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微博",
+    "query": "微博 无障碍 改造 社区 帮扶",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-微博-见义勇为-后续-核实",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "微博",
+    "query": "微博 见义勇为 后续 核实",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-小红书-好人好事-原视频-地点-时间",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "小红书",
+    "query": "小红书 好人好事 原视频 地点 时间",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-小红书-志愿者-帮助-老人-社区-原视频",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "小红书",
+    "query": "小红书 志愿者 帮助 老人 社区 原视频",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-小红书-救助-走失老人-找回-原视频",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "小红书",
+    "query": "小红书 救助 走失老人 找回 原视频",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-小红书-公益-助学-反馈-学生",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "小红书",
+    "query": "小红书 公益 助学 反馈 学生",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-小红书-环保-志愿者-清理-河道",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "小红书",
+    "query": "小红书 环保 志愿者 清理 河道",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-小红书-流浪动物-救助-回访",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "小红书",
+    "query": "小红书 流浪动物 救助 回访",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-小红书-无障碍-改造-社区-帮扶",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "小红书",
+    "query": "小红书 无障碍 改造 社区 帮扶",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-小红书-见义勇为-后续-核实",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "小红书",
+    "query": "小红书 见义勇为 后续 核实",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-bilibili-好人好事-原视频-地点-时间",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "Bilibili",
+    "query": "Bilibili 好人好事 原视频 地点 时间",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-bilibili-志愿者-帮助-老人-社区-原视频",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "Bilibili",
+    "query": "Bilibili 志愿者 帮助 老人 社区 原视频",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-bilibili-救助-走失老人-找回-原视频",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "Bilibili",
+    "query": "Bilibili 救助 走失老人 找回 原视频",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-bilibili-公益-助学-反馈-学生",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "Bilibili",
+    "query": "Bilibili 公益 助学 反馈 学生",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-bilibili-环保-志愿者-清理-河道",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "Bilibili",
+    "query": "Bilibili 环保 志愿者 清理 河道",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-bilibili-流浪动物-救助-回访",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "Bilibili",
+    "query": "Bilibili 流浪动物 救助 回访",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-bilibili-无障碍-改造-社区-帮扶",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "Bilibili",
+    "query": "Bilibili 无障碍 改造 社区 帮扶",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  },
+  {
+    "id": "video-leads-bilibili-见义勇为-后续-核实",
+    "groupId": "video-leads",
+    "groupLabel": "Chinese video/social leads",
+    "priority": "watch",
+    "sourceRole": "lead-only",
+    "platform": "Bilibili",
+    "query": "Bilibili 见义勇为 后续 核实",
+    "negativeHints": [
+      "摆拍",
+      "剧本",
+      "带货",
+      "求关注",
+      "正能量",
+      "感动",
+      "官方通报",
+      "仅转发"
+    ],
+    "verification": {
+      "acceptSignals": [
+        "original URL is available",
+        "date and location are clear",
+        "named person, organization, or project exists",
+        "action and result are concrete",
+        "at least one independent or primary supporting source exists"
+      ],
+      "holdSignals": [
+        "video-only lead",
+        "official-only source",
+        "missing date or location",
+        "vulnerable people, minors, medical treatment, or fundraising involved"
+      ],
+      "rejectSignals": [
+        "repost-only clip",
+        "no original link",
+        "no concrete action or result",
+        "commercial or creator traffic bait",
+        "unverifiable touching story",
+        "slogan-style positive-energy item"
+      ]
+    },
+    "generatedAt": "2026-06-09T05:18:48.858Z"
+  }
+]

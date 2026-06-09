@@ -30,6 +30,7 @@ This iteration turns content operations into a repeatable workflow. The site sho
 | 02 | deepseek-and-day-one | Add DeepSeek scoring config, expand China source strategy, and run day-one trial publishing | completed |
 | 03 | deepseek-live-triage | Verify DeepSeek with the user's API key and tune routing rules on the first real candidate pool | completed |
 | 04 | chinese-lead-pipeline | Define Chinese source and video-lead discovery workflow for AI-first triage | completed |
+| 05 | review-pool-export | Export scored results into daily candidate and rejected review pools | completed |
 
 ## Key Decisions
 
