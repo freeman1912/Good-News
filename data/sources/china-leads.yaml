@@ -1,0 +1,125 @@
+# Chinese good-news lead discovery configuration.
+# This is not an auto-publish source list. It is a repeatable search/task plan
+# for future search APIs, video-platform tooling, or manual discovery.
+
+version: 1
+
+leadGroups:
+  - id: public-good-primary
+    label: Primary public-good evidence sources
+    priority: high
+    sourceRole: evidence
+    sources:
+      - id: china-development-brief
+        name: 中国发展简报 / NGO信息中心
+        url: https://www.chinadevelopmentbrief.org.cn/
+        queryHints:
+          - site:chinadevelopmentbrief.org.cn 公益 项目
+          - site:chinadevelopmentbrief.org.cn 志愿者 社区
+          - site:chinadevelopmentbrief.org.cn 儿童 教育 公益
+      - id: friends-of-nature
+        name: 自然之友
+        url: https://www.fon.org.cn/
+        queryHints:
+          - site:fon.org.cn 保护 修复 志愿者
+          - site:fon.org.cn 环境 公益 项目
+      - id: tencent-charity
+        name: 腾讯公益
+        url: https://gongyi.qq.com/
+        queryHints:
+          - site:gongyi.qq.com 项目进展 公益
+          - site:gongyi.qq.com 助学 救助 反馈
+      - id: weibo-charity
+        name: 微公益
+        url: https://gongyi.weibo.com/
+        queryHints:
+          - site:gongyi.weibo.com 公益 项目
+          - site:gongyi.weibo.com 救助 反馈
+      - id: byte-dance-charity
+        name: 字节跳动公益
+        url: https://gongyi.bytedance.com/
+        queryHints:
+          - site:gongyi.bytedance.com 公益 项目
+          - site:gongyi.bytedance.com 志愿者 反馈
+
+  - id: public-interest-media
+    label: Chinese public-interest reporting
+    priority: medium
+    sourceRole: discovery
+    sources:
+      - id: caixin-health
+        name: 财新健康
+        url: https://health.caixin.com/
+        queryHints:
+          - site:health.caixin.com 医疗 突破 公益
+          - site:health.caixin.com 罕见病 救助 改善
+      - id: infzm
+        name: 南方周末
+        url: https://www.infzm.com/
+        queryHints:
+          - site:infzm.com 公益 救助 社区
+          - site:infzm.com 环保 修复 公共服务
+      - id: thepaper
+        name: 澎湃新闻
+        url: https://www.thepaper.cn/
+        queryHints:
+          - site:thepaper.cn 公益 志愿者 救助
+          - site:thepaper.cn 科研 突破 医疗
+          - site:thepaper.cn 环境 修复 保护
+      - id: cyol
+        name: 中国青年报
+        url: https://www.cyol.com/
+        queryHints:
+          - site:cyol.com 志愿者 公益 青年
+          - site:cyol.com 助学 支教 社区
+
+  - id: video-leads
+    label: Chinese video/social leads
+    priority: watch
+    sourceRole: lead-only
+    platforms:
+      - 抖音
+      - 快手
+      - 微信视频号
+      - 微博
+      - 小红书
+      - Bilibili
+    queryHints:
+      - 好人好事 原视频 地点 时间
+      - 志愿者 帮助 老人 社区 原视频
+      - 救助 走失老人 找回 原视频
+      - 公益 助学 反馈 学生
+      - 环保 志愿者 清理 河道
+      - 流浪动物 救助 回访
+      - 无障碍 改造 社区 帮扶
+      - 见义勇为 后续 核实
+    negativeHints:
+      - 摆拍
+      - 剧本
+      - 带货
+      - 求关注
+      - 正能量
+      - 感动
+      - 官方通报
+      - 仅转发
+
+verificationRules:
+  acceptSignals:
+    - original URL is available
+    - date and location are clear
+    - named person, organization, or project exists
+    - action and result are concrete
+    - at least one independent or primary supporting source exists
+  holdSignals:
+    - video-only lead
+    - official-only source
+    - missing date or location
+    - vulnerable people, minors, medical treatment, or fundraising involved
+  rejectSignals:
+    - repost-only clip
+    - no original link
+    - no concrete action or result
+    - commercial or creator traffic bait
+    - unverifiable touching story
+    - slogan-style positive-energy item
+

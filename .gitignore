@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.local
+.astro-dev.*.log
+_references/
+.codex/

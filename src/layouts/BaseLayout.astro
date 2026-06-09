@@ -1,0 +1,59 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "今日好消息 - 每天一点真实发生的好消息",
+  description = "一个面向中文读者的开源公益好消息聚合网站，收集真实、具体、可验证的中外好消息，并提供 RSS 订阅。",
+} = Astro.props;
+
+const navItems = [
+  { href: "/", label: "今日" },
+  { href: "/archive", label: "归档" },
+  { href: "/rss", label: "RSS" },
+  { href: "/about", label: "关于" },
+  { href: "/submit", label: "提交线索" },
+];
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="border-b border-border/80 bg-neutral/92 backdrop-blur">
+      <nav
+        class="mx-auto flex max-w-5xl flex-col items-start justify-between gap-3 px-4 py-4 sm:flex-row sm:items-center sm:gap-6 sm:px-6"
+        aria-label="主导航"
+      >
+        <a href="/" class="flex min-w-0 flex-col leading-tight">
+          <span class="text-lg font-semibold tracking-normal text-ink">今日好消息</span>
+          <span class="text-xs text-muted">Good News Daily</span>
+        </a>
+        <div class="flex flex-wrap items-center gap-1 text-sm text-muted">
+          {
+            navItems.map((item) => (
+              <a
+                href={item.href}
+                class="shrink-0 rounded-sm px-2.5 py-1.5 transition hover:bg-surface-muted hover:text-ink"
+              >
+                {item.label}
+              </a>
+            ))
+          }
+        </div>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+name: 提交好消息线索
+description: 提交一条真实、具体的好消息线索。线索不会自动发布。
+title: "[线索] "
+labels:
+  - good-news-lead
+  - needs-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        谢谢你提交线索。这里收集的是“可能值得核实的好消息线索”，不是自动发布的新闻。
+
+        如果你不是很熟悉 GitHub，也可以先使用网站上的提交表单，它会帮你生成这份 Issue。
+  - type: dropdown
+    id: lead-type
+    attributes:
+      label: 线索类型
+      options:
+        - 媒体或公众号里看到的好消息
+        - 公益项目 / 公共改善
+        - 身边好人好事
+        - 我自己参与或做的一件好事
+        - 长期做好事的人或组织
+        - 其他真实好消息线索
+    validations:
+      required: true
+  - type: input
+    id: news-title
+    attributes:
+      label: 一句话标题
+      description: 用一句话说清楚发生了什么。
+      placeholder: 例如：一个社区把闲置教室改成了免费晚托空间
+    validations:
+      required: true
+  - type: input
+    id: happened-at
+    attributes:
+      label: 发生时间
+      placeholder: 例如：2026 年 6 月 / 上周 / 大概最近几天
+    validations:
+      required: false
+  - type: input
+    id: location
+    attributes:
+      label: 发生地点
+      placeholder: 例如：杭州某社区 / 四川凉山 / 线上公益项目
+    validations:
+      required: false
+  - type: textarea
+    id: action
+    attributes:
+      label: 谁做了什么？
+      description: 请尽量写具体：谁、做了什么、怎么做的。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 帮助了谁？产生了什么结果？
+      description: 如果知道人数、对象、变化或项目成果，请写出来。
+    validations:
+      required: false
+  - type: textarea
+    id: why-good
+    attributes:
+      label: 为什么你觉得这是好消息？
+      description: 不需要口号，讲清楚它让什么变好了。
+    validations:
+      required: true
+  - type: dropdown
+    id: submitter-role
+    attributes:
+      label: 你和这件事的关系
+      options:
+        - 我是在网上看到的
+        - 我是在媒体、公众号或机构页面看到的
+        - 我是目击者
+        - 我本人参与了这件事
+        - 其他关系
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 链接、证据或补充说明
+      description: 可以贴报道、公众号、视频、项目页、照片说明、其他人可确认的信息。没有也可以写“暂时没有”。
+    validations:
+      required: false
+  - type: textarea
+    id: privacy-note
+    attributes:
+      label: 隐私和安全提醒
+      description: 是否涉及未成年人、病人、受助者、家庭住址、联系方式等不适合公开的信息？
+    validations:
+      required: false
+  - type: textarea
+    id: relationship-disclosure
+    attributes:
+      label: 关系或利益披露
+      description: 你是否是当事人、组织成员、项目发起者、赞助方或受益人？如有，请说明。
+    validations:
+      required: false
+  - type: input
+    id: public-name
+    attributes:
+      label: 公开署名
+      description: 可选。比如：匿名 / 昵称 / 真实姓名。
+    validations:
+      required: false
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: 边界确认
+      options:
+        - label: 我理解这只是提交线索，不代表一定收录，也不会自动发布。
+          required: true
+        - label: 如果涉及隐私或弱势处境的人，我已经尽量避免公开敏感信息。
+          required: true
+        - label: 这不是软文、营销稿、摆拍流量内容或口号式正能量。
+          required: true

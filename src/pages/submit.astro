@@ -1,0 +1,302 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { site } from "@/lib/site";
+
+const leadTypes = [
+  { value: "media-candidate", label: "媒体或公众号里看到的好消息" },
+  { value: "public-project", label: "公益项目 / 公共改善" },
+  { value: "everyday-kindness", label: "身边好人好事" },
+  { value: "self-reported-kindness", label: "我自己参与或做的一件好事" },
+  { value: "person-organization-profile", label: "长期做好事的人或组织" },
+  { value: "other", label: "其他真实好消息线索" },
+];
+
+const roles = [
+  { value: "online-source", label: "我是在网上看到的" },
+  { value: "media-source", label: "我是在媒体、公众号或机构页面看到的" },
+  { value: "witness", label: "我是目击者" },
+  { value: "self", label: "我本人参与了这件事" },
+  { value: "other", label: "其他关系" },
+];
+---
+
+<BaseLayout title="提交好消息线索 - 今日好消息">
+  <section class="mx-auto grid max-w-5xl gap-8 px-4 py-8 sm:px-6 sm:py-10">
+    <header class="border-b border-border pb-7">
+      <div class="max-w-3xl border-l-2 border-tertiary pl-4">
+        <p class="text-sm text-muted">Community Leads</p>
+        <h1 class="mt-2 text-3xl font-bold text-ink sm:text-4xl">提交好消息线索</h1>
+        <p class="mt-4 text-base leading-8 text-muted">
+          如果你看到一个真实的人、项目、组织或小事正在让世界变好，可以把线索交给我们。这里收集的是线索，不会自动发布；进入首页和 RSS 的内容仍然需要核实。
+        </p>
+      </div>
+    </header>
+
+    <section class="grid gap-4 md:grid-cols-3">
+      <article class="border-t border-border pt-4">
+        <h2 class="text-base font-semibold text-ink">今日精选</h2>
+        <p class="mt-2 text-sm leading-6 text-muted">
+          需要公开来源、清楚事实和核实说明，才会进入首页时间线与 RSS。
+        </p>
+      </article>
+      <article class="border-t border-border pt-4">
+        <h2 class="text-base font-semibold text-ink">每日好人好事</h2>
+        <p class="mt-2 text-sm leading-6 text-muted">
+          可以是自述或目击的小事，但展示时会标注“自述”“目击”“未独立核实”等状态。
+        </p>
+      </article>
+      <article class="border-t border-border pt-4">
+        <h2 class="text-base font-semibold text-ink">人物 / 组织线索</h2>
+        <p class="mt-2 text-sm leading-6 text-muted">
+          适合长期做好事但缺少正式报道的人或组织，先收集证据，之后再整理成内容。
+        </p>
+      </article>
+    </section>
+
+    <form
+      id="lead-form"
+      class="grid gap-5 rounded-lg border border-border bg-surface p-5 sm:p-6"
+      data-issue-url={site.githubNewIssueUrl}
+    >
+      <div class="grid gap-2">
+        <h2 class="text-xl font-semibold text-ink">线索信息</h2>
+        <p class="text-sm leading-6 text-muted">
+          不需要写成文章，只要尽量把人、事、时间、地点、结果讲清楚。证据不是每个小故事的硬门槛，但会影响它能否进入精选内容。
+        </p>
+      </div>
+
+      <div class="grid gap-5 md:grid-cols-2">
+        <label class="grid gap-2 text-sm font-medium text-ink">
+          线索类型
+          <select name="leadType" class="rounded-md border border-border bg-neutral px-3 py-2.5 text-sm text-ink" required>
+            {leadTypes.map((type) => <option value={type.value}>{type.label}</option>)}
+          </select>
+        </label>
+
+        <label class="grid gap-2 text-sm font-medium text-ink">
+          你和这件事的关系
+          <select name="submitterRole" class="rounded-md border border-border bg-neutral px-3 py-2.5 text-sm text-ink" required>
+            {roles.map((role) => <option value={role.value}>{role.label}</option>)}
+          </select>
+        </label>
+      </div>
+
+      <label class="grid gap-2 text-sm font-medium text-ink">
+        一句话标题
+        <input
+          name="title"
+          class="rounded-md border border-border bg-neutral px-3 py-2.5 text-sm text-ink"
+          placeholder="例如：一个社区把闲置教室改成了免费晚托空间"
+          required
+        />
+      </label>
+
+      <div class="grid gap-5 md:grid-cols-2">
+        <label class="grid gap-2 text-sm font-medium text-ink">
+          发生时间
+          <input
+            name="happenedAt"
+            class="rounded-md border border-border bg-neutral px-3 py-2.5 text-sm text-ink"
+            placeholder="例如：2026 年 6 月 / 上周 / 大概最近几天"
+          />
+        </label>
+
+        <label class="grid gap-2 text-sm font-medium text-ink">
+          发生地点
+          <input
+            name="location"
+            class="rounded-md border border-border bg-neutral px-3 py-2.5 text-sm text-ink"
+            placeholder="例如：杭州某社区 / 四川凉山 / 线上公益项目"
+          />
+        </label>
+      </div>
+
+      <label class="grid gap-2 text-sm font-medium text-ink">
+        谁做了什么？
+        <textarea
+          name="action"
+          class="min-h-28 rounded-md border border-border bg-neutral px-3 py-2.5 text-sm leading-6 text-ink"
+          placeholder="请尽量写具体：谁、做了什么、怎么做的。"
+          required
+        ></textarea>
+      </label>
+
+      <label class="grid gap-2 text-sm font-medium text-ink">
+        帮助了谁？产生了什么结果？
+        <textarea
+          name="result"
+          class="min-h-24 rounded-md border border-border bg-neutral px-3 py-2.5 text-sm leading-6 text-ink"
+          placeholder="例如：帮助了多少人、解决了什么问题、产生了什么看得见的改变。"
+        ></textarea>
+      </label>
+
+      <label class="grid gap-2 text-sm font-medium text-ink">
+        为什么你觉得这是好消息？
+        <textarea
+          name="whyGood"
+          class="min-h-24 rounded-md border border-border bg-neutral px-3 py-2.5 text-sm leading-6 text-ink"
+          placeholder="不用写口号，讲清楚它让什么变好了。"
+          required
+        ></textarea>
+      </label>
+
+      <label class="grid gap-2 text-sm font-medium text-ink">
+        链接、证据或补充说明
+        <textarea
+          name="evidence"
+          class="min-h-24 rounded-md border border-border bg-neutral px-3 py-2.5 text-sm leading-6 text-ink"
+          placeholder="可以贴报道、公众号、视频、项目页、照片说明、其他人可确认的信息。没有也可以写“暂时没有”。"
+        ></textarea>
+      </label>
+
+      <div class="grid gap-5 md:grid-cols-2">
+        <label class="grid gap-2 text-sm font-medium text-ink">
+          隐私和安全提醒
+          <textarea
+            name="privacyNote"
+            class="min-h-24 rounded-md border border-border bg-neutral px-3 py-2.5 text-sm leading-6 text-ink"
+            placeholder="是否涉及未成年人、病人、受助者、家庭住址、联系方式等不适合公开的信息？"
+          ></textarea>
+        </label>
+
+        <label class="grid gap-2 text-sm font-medium text-ink">
+          关系或利益披露
+          <textarea
+            name="relationshipDisclosure"
+            class="min-h-24 rounded-md border border-border bg-neutral px-3 py-2.5 text-sm leading-6 text-ink"
+            placeholder="你是否是当事人、组织成员、项目发起者、赞助方或受益人？如有，请说明。"
+          ></textarea>
+        </label>
+      </div>
+
+      <label class="grid gap-2 text-sm font-medium text-ink">
+        公开署名
+        <input
+          name="publicName"
+          class="rounded-md border border-border bg-neutral px-3 py-2.5 text-sm text-ink"
+          placeholder="可选。比如：匿名 / 昵称 / 真实姓名"
+        />
+      </label>
+
+      <fieldset class="grid gap-3 border-t border-border pt-4">
+        <legend class="text-sm font-semibold text-ink">提交前确认</legend>
+        <label class="flex gap-3 text-sm leading-6 text-muted">
+          <input class="mt-1 h-4 w-4 shrink-0 accent-primary" type="checkbox" name="confirmNotAutoPublish" required />
+          <span>我理解这只是提交线索，不代表一定收录，也不会自动发布。</span>
+        </label>
+        <label class="flex gap-3 text-sm leading-6 text-muted">
+          <input class="mt-1 h-4 w-4 shrink-0 accent-primary" type="checkbox" name="confirmPrivacy" required />
+          <span>如果涉及隐私或弱势处境的人，我已经尽量避免公开敏感信息。</span>
+        </label>
+        <label class="flex gap-3 text-sm leading-6 text-muted">
+          <input class="mt-1 h-4 w-4 shrink-0 accent-primary" type="checkbox" name="confirmNoMarketing" required />
+          <span>这不是软文、营销稿、摆拍流量内容或口号式正能量。</span>
+        </label>
+      </fieldset>
+
+      <div class="flex flex-col gap-3 border-t border-border pt-5 sm:flex-row sm:items-center sm:justify-between">
+        <p id="submit-help" class="text-sm leading-6 text-muted">
+          点击后会打开 GitHub Issue 草稿；你还需要在 GitHub 页面确认提交。
+        </p>
+        <button class="rounded-md bg-primary px-5 py-3 text-sm font-medium text-white transition hover:bg-primary-hover" type="submit">
+          生成并提交线索
+        </button>
+      </div>
+
+      <p id="submit-error" class="hidden rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700" role="alert"></p>
+    </form>
+
+    <section class="rounded-lg border border-border bg-surface-muted p-5">
+      <h2 class="text-lg font-semibold text-ink">审核之后会怎样？</h2>
+      <div class="mt-4 grid gap-3 text-sm leading-7 text-muted md:grid-cols-2">
+        <p><strong class="text-ink">已核实：</strong>可以进入今日精选、归档和 RSS。</p>
+        <p><strong class="text-ink">基本可信：</strong>未来可进入每日好人好事，但会标注来源和核实状态。</p>
+        <p><strong class="text-ink">待补证据：</strong>事实具体，但还需要公开来源或更多说明。</p>
+        <p><strong class="text-ink">不收录：</strong>无法核实、侵犯隐私、宣传营销或不符合项目边界。</p>
+      </div>
+    </section>
+  </section>
+
+  <script>
+    const leadTypeLabels = {
+      "media-candidate": "媒体或公众号里看到的好消息",
+      "public-project": "公益项目 / 公共改善",
+      "everyday-kindness": "身边好人好事",
+      "self-reported-kindness": "我自己参与或做的一件好事",
+      "person-organization-profile": "长期做好事的人或组织",
+      other: "其他真实好消息线索",
+    } as Record<string, string>;
+
+    const roleLabels = {
+      self: "我本人参与了这件事",
+      witness: "我是目击者",
+      "online-source": "我是在网上看到的",
+      "media-source": "我是在媒体、公众号或机构页面看到的",
+      other: "其他关系",
+    } as Record<string, string>;
+
+    const form = document.querySelector<HTMLFormElement>("#lead-form");
+    const errorBox = document.querySelector<HTMLParagraphElement>("#submit-error");
+
+    function valueOf(data: FormData, key: string) {
+      const value = data.get(key);
+      return typeof value === "string" && value.trim() ? value.trim() : "未填写";
+    }
+
+    function markdownField(label: string, value: string) {
+      return `### ${label}\n\n${value}\n`;
+    }
+
+    form?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      errorBox?.classList.add("hidden");
+
+      const data = new FormData(form);
+      const title = valueOf(data, "title");
+      const leadType = valueOf(data, "leadType");
+      const submitterRole = valueOf(data, "submitterRole");
+      const leadTypeLabel = leadTypeLabels[leadType] || leadType;
+      const roleLabel = roleLabels[submitterRole] || submitterRole;
+
+      const body = [
+        "## 好消息线索",
+        "",
+        markdownField("线索类型", leadTypeLabel),
+        markdownField("发生时间", valueOf(data, "happenedAt")),
+        markdownField("发生地点", valueOf(data, "location")),
+        markdownField("谁做了什么", valueOf(data, "action")),
+        markdownField("帮助了谁 / 产生了什么结果", valueOf(data, "result")),
+        markdownField("为什么这是好消息", valueOf(data, "whyGood")),
+        markdownField("链接、证据或补充说明", valueOf(data, "evidence")),
+        markdownField("提交者和事件的关系", roleLabel),
+        markdownField("隐私和安全提醒", valueOf(data, "privacyNote")),
+        markdownField("关系或利益披露", valueOf(data, "relationshipDisclosure")),
+        markdownField("公开署名", valueOf(data, "publicName")),
+        "## 边界确认",
+        "",
+        "- [x] 我理解这只是提交线索，不代表一定收录，也不会自动发布。",
+        "- [x] 如果涉及隐私或弱势处境的人，我已经尽量避免公开敏感信息。",
+        "- [x] 这不是软文、营销稿、摆拍流量内容或口号式正能量。",
+        "",
+        "## 维护者审核区",
+        "",
+        "- Review status: submitted",
+        "- Suggested route: needs-review",
+        "- Verification notes:",
+      ].join("\n");
+
+      try {
+        const issueUrl = new URL(form.dataset.issueUrl || "");
+        issueUrl.searchParams.set("title", `[线索][${leadTypeLabel}] ${title}`);
+        issueUrl.searchParams.set("body", body);
+        issueUrl.searchParams.set("labels", "good-news-lead,needs-review");
+        window.open(issueUrl.toString(), "_blank", "noopener,noreferrer");
+      } catch {
+        if (errorBox) {
+          errorBox.textContent = "GitHub Issue 地址配置不正确，请检查 PUBLIC_GITHUB_NEW_ISSUE_URL。";
+          errorBox.classList.remove("hidden");
+        }
+      }
+    });
+  </script>
+</BaseLayout>

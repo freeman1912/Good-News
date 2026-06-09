@@ -1,0 +1,33 @@
+---
+import { regionDefinitions, topicDefinitions } from "@/lib/categories";
+
+interface Props {
+  activeTopic?: string;
+}
+
+const { activeTopic } = Astro.props;
+---
+
+<section aria-label="筛选条件" class="grid gap-3 border-y border-border py-4">
+  <div class="flex flex-wrap items-center gap-2">
+    <span class="w-10 text-sm text-muted">地区</span>
+    {
+      regionDefinitions.map((region, index) => (
+        <span class={index === 0 ? "rounded-sm bg-surface-muted px-2.5 py-1 text-sm text-primary" : "rounded-sm border border-border/80 px-2.5 py-1 text-sm text-muted"}>
+          {region.label}
+        </span>
+      ))
+    }
+  </div>
+  <div class="flex flex-wrap items-center gap-2">
+    <span class="w-10 text-sm text-muted">主题</span>
+    {topicDefinitions.map((topic) => (
+      <a
+        href={`/category/${topic.slug}`}
+        class={topic.slug === activeTopic ? "rounded-sm bg-surface-muted px-2.5 py-1 text-sm text-primary" : "rounded-sm border border-border/80 px-2.5 py-1 text-sm text-muted transition hover:bg-surface-muted hover:text-ink"}
+      >
+        {topic.label}
+      </a>
+    ))}
+  </div>
+</section>

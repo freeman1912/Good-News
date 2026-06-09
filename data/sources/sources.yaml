@@ -1,0 +1,237 @@
+# Starter source pool for Good News.
+# This list is intentionally conservative. Sources can be paused, downgraded,
+# or expanded after the ingestion pipeline proves stable.
+
+- id: good-news-network
+  name: Good News Network
+  language: en
+  regionFocus: world
+  type: rss
+  url: https://www.goodnewsnetwork.org/
+  rssUrl: https://www.goodnewsnetwork.org/feed/
+  topics:
+    - public-improvement
+    - people-kindness
+    - environment-animals
+    - science-health
+  trustLevel: high
+  officialRisk: false
+  notes: Long-running good-news publication. Good first source, but still verify original links when claims are specific.
+
+- id: positive-news
+  name: Positive News
+  language: en
+  regionFocus: world
+  type: rss
+  url: https://www.positive.news/
+  rssUrl: https://www.positive.news/feed/
+  topics:
+    - public-improvement
+    - environment-animals
+    - education-culture
+    - science-health
+  trustLevel: high
+  officialRisk: false
+  notes: Constructive journalism source. Good fit for the project's non-chicken-soup boundary.
+
+- id: reasons-to-be-cheerful
+  name: Reasons to be Cheerful
+  language: en
+  regionFocus: world
+  type: rss
+  url: https://reasonstobecheerful.world/
+  rssUrl: https://reasonstobecheerful.world/feed/
+  topics:
+    - public-improvement
+    - environment-animals
+    - education-culture
+  trustLevel: high
+  officialRisk: false
+  notes: Solutions-oriented publication. Strong source for constructive-news framing.
+
+- id: yes-magazine
+  name: YES! Magazine
+  language: en
+  regionFocus: world
+  type: rss
+  url: https://www.yesmagazine.org/
+  rssUrl: https://www.yesmagazine.org/feed
+  topics:
+    - public-improvement
+    - environment-animals
+    - charity-mutual-aid
+    - education-culture
+  trustLevel: medium
+  officialRisk: false
+  notes: Broader solutions journalism and essays. YES! says it ceased regular publication in 2025, so use selectively as an archive/monthly lead source and filter carefully for concrete news items.
+
+- id: good-good-good
+  name: Good Good Good
+  language: en
+  regionFocus: world
+  type: site
+  url: https://www.goodgoodgood.co/
+  topics:
+    - people-kindness
+    - charity-mutual-aid
+    - environment-animals
+    - public-improvement
+  trustLevel: medium
+  officialRisk: false
+  notes: Good brand and topic fit, but the checked Webflow RSS-style URL returned HTML during Phase 05 implementation. Re-add rssUrl only after verifying a real feed.
+
+- id: upworthy
+  name: Upworthy
+  language: en
+  regionFocus: world
+  type: rss
+  url: https://www.upworthy.com/
+  rssUrl: https://www.upworthy.com/feeds/feed.rss
+  topics:
+    - people-kindness
+    - charity-mutual-aid
+    - education-culture
+  trustLevel: watch
+  officialRisk: false
+  notes: Can contain uplifting stories, but may be less evidence-focused. Keep on watch and require source verification.
+
+- id: goodnet
+  name: Goodnet
+  language: en
+  regionFocus: world
+  type: site
+  url: https://www.goodnet.org/
+  topics:
+    - people-kindness
+    - charity-mutual-aid
+    - environment-animals
+    - education-culture
+  trustLevel: watch
+  officialRisk: false
+  notes: Useful discovery source. The old rssUrl returned 404/redirect errors during Phase 05 implementation, so it is kept as a site source until a valid feed is verified.
+
+- id: optimist-daily
+  name: The Optimist Daily
+  language: en
+  regionFocus: world
+  type: site
+  url: https://www.optimistdaily.com/
+  topics:
+    - science-health
+    - environment-animals
+    - public-improvement
+  trustLevel: medium
+  officialRisk: false
+  notes: Add RSS URL after verification during implementation.
+
+- id: the-better-india
+  name: The Better India
+  language: en
+  regionFocus: world
+  type: site
+  url: https://www.thebetterindia.com/
+  topics:
+    - people-kindness
+    - public-improvement
+    - environment-animals
+    - education-culture
+  trustLevel: medium
+  officialRisk: false
+  notes: Region-specific but often concrete. Useful for non-Western world good-news coverage.
+
+- id: jane-goodall-good-for-all-news
+  name: Jane Goodall's Good for All News
+  language: en
+  regionFocus: world
+  type: site
+  url: https://news.janegoodall.org/
+  topics:
+    - environment-animals
+    - education-culture
+  trustLevel: medium
+  officialRisk: false
+  notes: Environment and animal-focused source. Verify whether feed exists during implementation.
+
+- id: china-development-brief-cn
+  name: 中国发展简报 / NGO信息中心
+  language: zh
+  regionFocus: china
+  type: site
+  url: https://www.chinadevelopmentbrief.org.cn/
+  topics:
+    - charity-mutual-aid
+    - public-improvement
+    - education-culture
+  trustLevel: medium
+  officialRisk: false
+  notes: Domestic nonprofit and NGO-sector discovery source. No verified RSS feed; use manually and verify project claims before publication.
+
+- id: friends-of-nature
+  name: 自然之友
+  language: zh
+  regionFocus: china
+  type: ngo
+  url: https://www.fon.org.cn/
+  topics:
+    - environment-animals
+    - public-improvement
+    - education-culture
+  trustLevel: medium
+  officialRisk: false
+  notes: Domestic environmental NGO and primary/project source. Useful for verification, but self-reported project updates need independent context when possible.
+
+- id: zhishifenzi
+  name: 知识分子
+  language: zh
+  regionFocus: china
+  type: site
+  url: https://www.zhishifenzi.com/
+  topics:
+    - science-health
+    - education-culture
+  trustLevel: medium
+  officialRisk: false
+  notes: Chinese science and public-knowledge source. Use for concrete science/health progress, not opinion-only pieces.
+
+- id: caixin-health
+  name: 财新健康
+  language: zh
+  regionFocus: china
+  type: site
+  url: https://health.caixin.com/
+  topics:
+    - science-health
+    - public-improvement
+  trustLevel: medium
+  officialRisk: false
+  notes: Credible general-news source for health and public-service leads. May be paywalled; verify primary sources before publishing.
+
+- id: infzm-watch
+  name: 南方周末
+  language: zh
+  regionFocus: china
+  type: search
+  url: https://www.infzm.com/
+  topics:
+    - public-improvement
+    - charity-mutual-aid
+    - environment-animals
+    - education-culture
+  trustLevel: watch
+  officialRisk: false
+  notes: Public-interest reporting discovery source. No verified feed; use search/manual review and avoid opinion-only or slogan-style pieces.
+
+- id: thepaper-watch
+  name: 澎湃新闻
+  language: zh
+  regionFocus: china
+  type: search
+  url: https://www.thepaper.cn/
+  topics:
+    - public-improvement
+    - people-kindness
+    - environment-animals
+    - science-health
+  trustLevel: watch
+  officialRisk: true
+  notes: Broad domestic news discovery source. Treat warm/positive columns as high-risk for propaganda tone; publish only concrete, independently checkable items.

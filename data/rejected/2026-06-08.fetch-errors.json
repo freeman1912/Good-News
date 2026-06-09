@@ -1,0 +1,9 @@
+[
+  {
+    "sourceId": "good-news-network",
+    "sourceName": "Good News Network",
+    "rssUrl": "https://www.goodnewsnetwork.org/feed/",
+    "error": "fetch failed: Connect Timeout Error (attempted addresses: 2a03:2880:f10e:83:face:b00c:0:25de:443, 199.59.149.232:443, timeout: 10000ms)",
+    "fetchedAt": "2026-06-08T05:09:23.079Z"
+  }
+]

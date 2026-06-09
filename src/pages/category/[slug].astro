@@ -1,0 +1,46 @@
+---
+import DateGroup from "@/components/DateGroup.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { topicDefinitions } from "@/lib/categories";
+import { groupNewsByDate } from "@/lib/dates";
+import { getNewsByTopic } from "@/lib/news";
+import type { TopicSlug } from "@/lib/types";
+
+export function getStaticPaths() {
+  return topicDefinitions.map((topic) => ({
+    params: { slug: topic.slug },
+    props: { topic },
+  }));
+}
+
+const { topic } = Astro.props;
+const items = await getNewsByTopic(topic.slug as TopicSlug);
+const groups = groupNewsByDate(items);
+---
+
+<BaseLayout title={`${topic.label} - 今日好消息`}>
+  <section class="mx-auto grid max-w-5xl gap-8 px-4 py-8 sm:px-6 sm:py-10">
+    <header class="border-b border-border pb-6">
+      <p class="text-sm text-muted">主题分类</p>
+      <div class="mt-2 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <h1 class="text-3xl font-bold text-ink sm:text-4xl">{topic.label}</h1>
+          <p class="mt-4 max-w-2xl text-base leading-8 text-muted">{topic.description}</p>
+        </div>
+        <a class="rounded-md bg-primary px-4 py-2.5 text-sm font-medium text-white transition hover:bg-primary-hover" href={topic.rssPath}>
+          订阅这个主题
+        </a>
+      </div>
+    </header>
+
+    {
+      groups.length === 0 ? (
+        <p class="rounded-lg border border-dashed border-border bg-surface p-5 text-sm text-muted">这个主题暂时还没有入选条目。</p>
+      ) : (
+        <div class="grid gap-8">
+          {groups.map((group) => <DateGroup group={group} />)}
+        </div>
+      )
+    }
+  </section>
+</BaseLayout>

@@ -1,0 +1,21 @@
+---
+import type { NewsDateGroup } from "@/lib/types";
+import NewsEntry from "./NewsEntry.astro";
+
+interface Props {
+  group: NewsDateGroup;
+}
+
+const { group } = Astro.props;
+---
+
+<section class="grid gap-3" aria-label={`${group.label} ${group.date}`}>
+  <div class="grid grid-cols-[auto_1fr_auto] items-center gap-3">
+    <span class="h-2 w-2 rounded-full bg-tertiary"></span>
+    <h2 class="text-sm font-semibold text-muted">{group.label} · {group.date}</h2>
+    <span class="text-xs text-muted">{group.items.length} 条</span>
+  </div>
+  <div class="border-l border-border pl-4">
+    {group.items.map((item) => <NewsEntry item={item} />)}
+  </div>
+</section>
