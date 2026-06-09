@@ -16,7 +16,8 @@
     "ingest:publish": "tsx scripts/ingest/publish.ts",
     "ingest:publish-manual": "tsx scripts/ingest/publish-manual.ts",
     "ingest:china-leads": "tsx scripts/ingest/generate-china-leads.ts",
-    "ingest": "pnpm ingest:fetch && pnpm ingest:score && pnpm ingest:publish"
+    "ingest": "pnpm ingest:fetch && pnpm ingest:score && pnpm ingest:publish",
+    "trial:daily": "tsx scripts/ingest/daily-trial.ts"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
