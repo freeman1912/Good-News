@@ -8,7 +8,8 @@ than a conventional article.
 
 There is no stable Chinese equivalent of Positive News or Reasons to be
 Cheerful yet. Chinese good-news discovery should use a lead pipeline, not a
-single source list.
+single source list. It should judge leads by visible results or trackable
+follow-up value, not by headline optimism.
 
 The pipeline should be:
 
@@ -23,6 +24,31 @@ video/search/platform lead
 Short videos can be leads. They are not enough by themselves for publication
 unless the video has a stable original URL, identifiable context, low privacy
 risk, and independent support.
+
+## Trackable Review Routes
+
+Every Chinese lead should be routed as one of:
+
+- `publishable`: result is already visible and supported by accessible evidence.
+- `follow-up`: promising, but currently only approved, launched, announced, started, or reported from a single risky source.
+- `rejected`: not verifiable, propaganda-like, inaccessible, privacy-risky, or not practically trackable.
+
+Do not publish a lead only because it was approved, launched, signed, selected,
+or announced. Those are tracking triggers, not good-news outcomes.
+
+Follow-up leads should include:
+
+- follow-up date;
+- what result would make it publishable;
+- what sources could verify the result;
+- what would make it rejected later.
+
+Examples:
+
+- A medical device approval is `follow-up` until there is real clinical use, access, cost, or patient benefit.
+- A patient aid program can be `publishable` only if the aid mechanism and real beneficiary path are clear.
+- An environmental release/restoration item is `follow-up` unless there is monitoring, survival, biodiversity, or habitat result.
+- A long-running volunteer network with cumulative verified outcomes can be `publishable`.
 
 ## Source Layers
 
@@ -162,4 +188,3 @@ Use when:
 
 The human workload should shrink to reviewing a small `verify` or `candidate`
 queue, not reading every raw video or article.
-

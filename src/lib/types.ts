@@ -130,6 +130,36 @@ export type CommunityLeadReviewStatus =
   | "verified"
   | "rejected";
 
+export type Trackability =
+  | "result-visible"
+  | "follow-up-needed"
+  | "not-trackable";
+
+export type VerificationStatus =
+  | "verified-result"
+  | "multi-source"
+  | "single-source"
+  | "official-only"
+  | "corporate-only"
+  | "needs-follow-up"
+  | "source-inaccessible"
+  | "rejected";
+
+export type ChineseReviewRoute = "publishable" | "follow-up" | "rejected";
+
+export interface FollowUpTask {
+  id: string;
+  candidateTitle: string;
+  originalUrl?: string;
+  route: Exclude<ChineseReviewRoute, "publishable">;
+  trackability: Trackability;
+  verificationStatus: VerificationStatus;
+  followUpAfter?: string;
+  followUpQuestions: string[];
+  reason: string;
+  createdAt: string;
+}
+
 export interface CommunityLead {
   id: string;
   type: CommunityLeadType;
@@ -147,5 +177,9 @@ export interface CommunityLead {
   relationshipDisclosure?: string;
   publicName?: string;
   reviewStatus: CommunityLeadReviewStatus;
+  trackability?: Trackability;
+  verificationStatus?: VerificationStatus;
+  followUpAfter?: string;
+  followUpQuestions?: string[];
   submittedAt: string;
 }

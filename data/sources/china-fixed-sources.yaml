@@ -1,0 +1,204 @@
+# Fixed Chinese source pool for trial operations.
+# These are discovery and evidence sources, not auto-publish sources.
+
+version: 1
+
+themes:
+  - id: science-health
+    label: 科学医疗
+    acceptance:
+      - already used in hospitals, clinics, public-health services, or patient aid
+      - has patient/public benefit beyond approval, launch, or product announcement
+      - can be checked through hospital, regulator, paper, registry, or foundation source
+    rejectHints:
+      - approved only
+      - entered review channel only
+      - product launch without real-world use
+      - expert quote without outcome
+    sources:
+      - id: sciencenet
+        name: 科学网 / 中国科学报
+        role: discovery
+        trustLevel: medium
+        url: https://news.sciencenet.cn/
+      - id: caixin-health
+        name: 财新健康
+        role: discovery
+        trustLevel: medium
+        url: https://health.caixin.com/
+      - id: zhishifenzi
+        name: 知识分子
+        role: discovery
+        trustLevel: medium
+        url: https://www.zhishifenzi.com/
+      - id: nmpa
+        name: 国家药品监督管理局
+        role: evidence
+        trustLevel: watch
+        officialRisk: true
+        url: https://www.nmpa.gov.cn/
+      - id: hospital-pages
+        name: 医院/临床中心公开页面
+        role: evidence
+        trustLevel: watch
+        url: search
+
+  - id: charity-mutual-aid
+    label: 公益互助
+    acceptance:
+      - has clear people helped, amount delivered, service count, or long-term record
+      - can be checked through organization page, media report, project report, or recipient-side evidence
+      - avoids exposing recipients' private details
+    rejectHints:
+      - donation ceremony only
+      - fundraising slogan without delivery
+      - unverifiable touching story
+      - brand campaign as main source
+    sources:
+      - id: china-development-brief
+        name: 中国发展简报 / NGO信息中心
+        role: discovery
+        trustLevel: medium
+        url: https://www.chinadevelopmentbrief.org.cn/
+      - id: caixin
+        name: 财新
+        role: discovery
+        trustLevel: medium
+        url: https://www.caixin.com/
+      - id: infzm
+        name: 南方周末
+        role: discovery
+        trustLevel: medium
+        url: https://www.infzm.com/
+      - id: thepaper
+        name: 澎湃新闻
+        role: discovery
+        trustLevel: watch
+        officialRisk: true
+        url: https://www.thepaper.cn/
+      - id: charity-org-pages
+        name: 公益组织项目页/年报/回访
+        role: evidence
+        trustLevel: medium
+        url: search
+
+  - id: environment-animals
+    label: 环境与动物
+    acceptance:
+      - has visible restoration, protection result, monitoring data, or long-term project outcome
+      - can be checked through NGO, research, local media, or monitoring source
+      - avoids ceremony-only releases
+    rejectHints:
+      - release ceremony only
+      - one-time volunteer cleanup without result
+      - official target without implementation
+      - scenic-area promotion
+    sources:
+      - id: friends-of-nature
+        name: 自然之友
+        role: discovery
+        trustLevel: medium
+        url: https://www.fon.org.cn/
+      - id: chinadialogue
+        name: 中外对话
+        role: discovery
+        trustLevel: medium
+        url: https://chinadialogue.net/zh/
+      - id: jiemian
+        name: 界面新闻
+        role: discovery
+        trustLevel: watch
+        url: https://www.jiemian.com/
+      - id: chinanews
+        name: 中国新闻网
+        role: discovery
+        trustLevel: watch
+        officialRisk: true
+        url: https://www.chinanews.com.cn/
+      - id: project-monitoring
+        name: 项目监测/科研/NGO后续报告
+        role: evidence
+        trustLevel: medium
+        url: search
+
+  - id: public-improvement
+    label: 公共改善
+    acceptance:
+      - has real service delivery, usage, cost reduction, access improvement, or measurable public benefit
+      - can be checked through local reporting, service page, user-side evidence, or follow-up data
+      - focuses on the beneficiary, not officials or ceremonies
+    rejectHints:
+      - policy issued only
+      - opening ceremony only
+      - leadership inspection
+      - target without result
+    sources:
+      - id: infzm
+        name: 南方周末
+        role: discovery
+        trustLevel: medium
+        url: https://www.infzm.com/
+      - id: lifeweek
+        name: 三联生活周刊
+        role: discovery
+        trustLevel: medium
+        url: https://www.lifeweek.com.cn/
+      - id: caixin
+        name: 财新
+        role: discovery
+        trustLevel: medium
+        url: https://www.caixin.com/
+      - id: yicai
+        name: 第一财经
+        role: discovery
+        trustLevel: watch
+        url: https://www.yicai.com/
+      - id: local-service-pages
+        name: 服务项目页/本地媒体/用户反馈
+        role: evidence
+        trustLevel: watch
+        url: search
+
+  - id: people-kindness
+    label: 人物善举
+    acceptance:
+      - has a sustained record, named organization, clear count, or multiple sources
+      - protects privacy of recipients
+      - can be followed up through organization, local media, or public project records
+    rejectHints:
+      - single viral short video
+      - no original source
+      - no date or location
+      - staged kindness or traffic bait
+    sources:
+      - id: daily-people
+        name: 每日人物
+        role: discovery
+        trustLevel: watch
+        url: https://www.dailypeople.com.cn/
+      - id: china-news-weekly
+        name: 中国新闻周刊
+        role: discovery
+        trustLevel: watch
+        url: https://www.inewsweek.cn/
+      - id: local-media
+        name: 地方媒体/当事组织/公开项目记录
+        role: evidence
+        trustLevel: watch
+        url: search
+
+reviewRoutes:
+  publishable:
+    - result is already visible
+    - beneficiary or public value is concrete
+    - source is accessible
+    - verification is not official-only or corporate-only unless there is strong independent support
+  follow-up:
+    - approved, launched, announced, or started but no result yet
+    - likely public value but only single source today
+    - official or corporate source may be true but needs outcome data
+  rejected:
+    - source cannot be opened or traced
+    - ceremony, meeting, slogan, or award only
+    - no result, beneficiary, or follow-up path
+    - privacy risk is too high

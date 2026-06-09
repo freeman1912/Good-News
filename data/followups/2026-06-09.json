@@ -1,0 +1,114 @@
+[
+  {
+    "id": "cn-2026-06-09-thalassemia-gene-therapy-aid",
+    "candidateTitle": "自研地贫基因治疗落地海南乐城，启动百例患者帮扶计划",
+    "route": "follow-up",
+    "trackability": "follow-up-needed",
+    "verificationStatus": "corporate-only",
+    "followUpAfter": "2026-09-09",
+    "followUpQuestions": [
+      "帮扶计划是否已经开始执行？",
+      "有多少患者获得实际资助或费用减免？",
+      "医院、基金会或患者侧是否有可访问的执行信息？",
+      "是否存在夸大疗效、商业推广或隐私风险？"
+    ],
+    "reason": "治疗和帮扶机制可能有公共价值，但当前更像企业/机构发布，需要结果数据。",
+    "createdAt": "2026-06-09T00:00:00.000Z"
+  },
+  {
+    "id": "cn-2026-06-09-intravascular-ultrasound-approved",
+    "candidateTitle": "首款超高清双频率血管内超声获批上市",
+    "route": "follow-up",
+    "trackability": "follow-up-needed",
+    "verificationStatus": "needs-follow-up",
+    "followUpAfter": "2026-09-09",
+    "followUpQuestions": [
+      "该设备是否进入医院真实临床使用？",
+      "哪些医院使用，是否有公开信息？",
+      "是否改善诊断可及性、成本或临床流程？",
+      "是否能在国家药监局注册信息中核对？"
+    ],
+    "reason": "获批上市是追踪触发，不等于已有患者或公共服务结果。",
+    "createdAt": "2026-06-09T00:00:00.000Z"
+  },
+  {
+    "id": "cn-2026-06-09-proton-therapy-room",
+    "candidateTitle": "国产质子装置 360 度旋转治疗室在瑞金医院启用",
+    "route": "follow-up",
+    "trackability": "follow-up-needed",
+    "verificationStatus": "official-only",
+    "followUpAfter": "2026-09-09",
+    "followUpQuestions": [
+      "启用后治疗了多少患者？",
+      "是否改善儿童或复杂肿瘤患者治疗可及性？",
+      "是否有医院之外的报道或公开服务数据？",
+      "报道是否过度承诺疗效？"
+    ],
+    "reason": "医院/地方报道可作为线索，但需要真实服务结果，不能只发布设备启用。",
+    "createdAt": "2026-06-09T00:00:00.000Z"
+  },
+  {
+    "id": "cn-2026-06-09-xingkai-lake-fish-release",
+    "candidateTitle": "兴凯湖增殖放流 400 万尾鱼苗",
+    "route": "follow-up",
+    "trackability": "follow-up-needed",
+    "verificationStatus": "official-only",
+    "followUpAfter": "2026-12-09",
+    "followUpQuestions": [
+      "是否有鱼苗成活率、资源恢复或生态监测数据？",
+      "放流物种是否为本土适宜物种？",
+      "是否有科研、保护组织或后续媒体报道支持？",
+      "是否只是仪式性活动报道？"
+    ],
+    "reason": "放流数字明确，但生态结果需要后续监测支撑。",
+    "createdAt": "2026-06-09T00:00:00.000Z"
+  },
+  {
+    "id": "cn-2026-06-09-mother-river-recovery",
+    "candidateTitle": "第二批母亲河复苏行动",
+    "route": "follow-up",
+    "trackability": "follow-up-needed",
+    "verificationStatus": "official-only",
+    "followUpAfter": "2026-12-09",
+    "followUpQuestions": [
+      "哪些河湖出现可测量恢复？",
+      "是否有水量、水质、生境或生态数据？",
+      "是否有地方项目执行信息而非中央口径？",
+      "是否有第三方或科研机构信息？"
+    ],
+    "reason": "政策行动有潜在公共价值，但官方启动信息不能直接当作结果。",
+    "createdAt": "2026-06-09T00:00:00.000Z"
+  },
+  {
+    "id": "cn-2026-06-09-jinshan-senior-canteen",
+    "candidateTitle": "上海金山社区长者食堂 13 元一餐",
+    "route": "follow-up",
+    "trackability": "follow-up-needed",
+    "verificationStatus": "official-only",
+    "followUpAfter": "2026-08-09",
+    "followUpQuestions": [
+      "长者食堂是否持续运营？",
+      "每天服务多少老人？",
+      "价格、补贴和餐食质量是否稳定？",
+      "是否有居民侧反馈或非官方报道？"
+    ],
+    "reason": "社区服务可能有真实价值，但需要运营持续性和受益者信息。",
+    "createdAt": "2026-06-09T00:00:00.000Z"
+  },
+  {
+    "id": "cn-2026-06-09-medical-ai-review-channel",
+    "candidateTitle": "上海医疗大模型产品进入国家创新医疗器械特别审查通道",
+    "route": "follow-up",
+    "trackability": "follow-up-needed",
+    "verificationStatus": "corporate-only",
+    "followUpAfter": "2026-12-09",
+    "followUpQuestions": [
+      "产品是否最终获批？",
+      "是否真实部署到医院并被医生使用？",
+      "是否有独立评估、临床收益或患者服务改善？",
+      "是否存在商业宣传大于公共价值的问题？"
+    ],
+    "reason": "进入审查通道只是流程节点，尚无公共结果。",
+    "createdAt": "2026-06-09T00:00:00.000Z"
+  }
+]

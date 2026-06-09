@@ -163,6 +163,37 @@ Avoid:
 
 Official sources are high-risk by default. They can be used only when the event has clear public value and at least one independent or primary supporting source.
 
+### Trackable Chinese Review
+
+Chinese leads must be reviewed by outcome, not by headline optimism.
+
+Routes:
+
+- `publishable`: the result is already visible and concrete.
+- `follow-up`: the lead is promising, but only approved, launched, announced, or started today.
+- `rejected`: the item is propaganda-like, inaccessible, not verifiable, or has no useful follow-up path.
+
+Trackability:
+
+- `result-visible`: already helped people, improved a service, restored ecology, delivered funds/services, or produced measurable public value.
+- `follow-up-needed`: might become good news later, but today only has approval, launch, policy, pledge, ceremony, or plan.
+- `not-trackable`: no accessible original source, no concrete actors, no date/place/result, or no practical way to check later.
+
+Chinese candidates should not be published just because something was approved,
+launched, listed, signed, announced, selected as a pilot, or started with a
+ceremony. Those can enter the follow-up queue only when there is a clear question
+to check later:
+
+- Did the patient aid program actually help patients?
+- Did the new medical device enter real clinical use?
+- Did the ecosystem restoration produce monitoring results?
+- Did the community service keep operating after launch?
+- Did a policy reduce cost, increase access, or improve daily life for real people?
+
+The fixed source configuration lives in `data/sources/china-fixed-sources.yaml`.
+It groups Chinese sources by theme and marks each as discovery or evidence. No
+Chinese source is auto-publish by default.
+
 ## Screening Checklist
 
 Accept an item only when most answers are yes:
@@ -173,6 +204,7 @@ Accept an item only when most answers are yes:
 - Does the item describe a real improvement, act of help, scientific progress, public-service improvement, environmental repair, or cultural/education benefit?
 - Can the summary be written without slogans or emotional manipulation?
 - If the source is official, commercial, or advocacy-heavy, is there cross-verification?
+- For Chinese sources, is the result already visible? If not, is there a concrete follow-up question?
 
 Reject or hold when:
 
@@ -183,6 +215,7 @@ Reject or hold when:
 - it depends on graphic bad-news framing for emotional effect;
 - it has no concrete public value beyond "this feels nice";
 - the original source cannot be found.
+- it is only an approval, launch, ceremony, or plan with no current beneficiary/result and no follow-up path.
 
 ## Reader-Submitted Leads
 
