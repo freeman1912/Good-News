@@ -81,6 +81,11 @@ themes:
         role: evidence
         trustLevel: medium
         url: search
+      - id: henghui-foundation
+        name: 深圳市恒晖公益基金会
+        role: discovery
+        trustLevel: medium
+        url: https://www.ihenghui.cn/
 
   - id: environment-animals
     label: 环境与动物
