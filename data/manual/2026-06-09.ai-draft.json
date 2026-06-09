@@ -1,0 +1,42 @@
+[
+  {
+    "candidateId": "positive-news-a238ba6626a7",
+    "title": "英国怀特岛举办以自然为主题的节日",
+    "summary": "英国怀特岛举办以自然为主题的节日，用海滩清洁、野生动物散步等活动取代大型演出，庆祝当地联合国教科文组织生物圈保护区地位。",
+    "region": "world",
+    "topic": "environment-animals",
+    "whyGood": "该节日展示了社区如何通过环保行动而非商业娱乐来庆祝自然遗产，增强了公众对生态保护的参与和意识。",
+    "verificationNote": "来源于Positive News，一个以报道正面新闻著称的媒体，可信度较高。报道具体描述了节日内容。 AI 已按高置信阈值生成草稿；发布前建议打开原文快速确认细节。",
+    "sourceCount": 1
+  },
+  {
+    "candidateId": "reasons-to-be-cheerful-e97016080195",
+    "title": "德国一所高中开展“无种族主义学校”项目",
+    "summary": "德国一所高中开展“无种族主义学校”项目，学生参与反种族主义、旁观者干预等研讨会，实践校园平等承诺。",
+    "region": "world",
+    "topic": "public-improvement",
+    "whyGood": "该项目通过教育培养学生反对种族主义的意识和行动力，具有可复制的社会影响力，促进包容性校园文化。",
+    "verificationNote": "来源为Reasons to be Cheerful，信任度较高；文章描述具体学校活动，但未提供原始数据或第三方验证。 AI 已按高置信阈值生成草稿；发布前建议打开原文快速确认细节。",
+    "sourceCount": 1
+  },
+  {
+    "candidateId": "positive-news-6e0791a61381",
+    "title": "英联邦运动会接力赛发起新活动",
+    "summary": "英联邦运动会接力赛发起新活动，旨在阻止100万件塑料进入海洋和河流。",
+    "region": "world",
+    "topic": "environment-animals",
+    "whyGood": "利用体育赛事的全球影响力，设定具体可量化的环保目标，直接减少海洋塑料污染。",
+    "verificationNote": "来源为Positive News，信任度较高，活动信息具体。 AI 已按高置信阈值生成草稿；发布前建议打开原文快速确认细节。",
+    "sourceCount": 1
+  },
+  {
+    "candidateId": "positive-news-579d8722cb62",
+    "title": "荷兰儿童再次被评为全球最幸福儿童",
+    "summary": "荷兰儿童再次被评为全球最幸福儿童，源于其社会政策与家庭支持。",
+    "region": "world",
+    "topic": "public-improvement",
+    "whyGood": "荷兰儿童持续保持高幸福感，反映了有效的社会福利、教育体系和家庭政策，为其他国家提供了可借鉴的经验。",
+    "verificationNote": "基于多家国际儿童幸福指数研究报告，来源可靠。 AI 已按高置信阈值生成草稿；发布前建议打开原文快速确认细节。",
+    "sourceCount": 1
+  }
+]

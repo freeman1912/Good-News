@@ -32,6 +32,7 @@ This iteration turns content operations into a repeatable workflow. The site sho
 | 04 | chinese-lead-pipeline | Define Chinese source and video-lead discovery workflow for AI-first triage | completed |
 | 05 | review-pool-export | Export scored results into daily candidate and rejected review pools | completed |
 | 06 | chinese-trackable-review | Add trackable Chinese review rules and fixed themed source pool | completed |
+| 07 | ai-draft-picks | Generate AI-selected publish drafts and concise review notes | completed |
 
 ## Key Decisions
 

@@ -9,6 +9,7 @@ interface CliOptions {
   skipFetch: boolean;
   skipScore: boolean;
   skipExport: boolean;
+  skipAiDraft: boolean;
   skipChinaLeads: boolean;
 }
 
@@ -31,6 +32,7 @@ function parseArgs(argv: string[]): CliOptions {
     skipFetch: false,
     skipScore: false,
     skipExport: false,
+    skipAiDraft: false,
     skipChinaLeads: false,
   };
 
@@ -50,6 +52,8 @@ function parseArgs(argv: string[]): CliOptions {
       options.skipScore = true;
     } else if (arg === "--skip-export") {
       options.skipExport = true;
+    } else if (arg === "--skip-ai-draft") {
+      options.skipAiDraft = true;
     } else if (arg === "--skip-china-leads") {
       options.skipChinaLeads = true;
     } else {
@@ -67,17 +71,23 @@ function parseArgs(argv: string[]): CliOptions {
     skipFetch: options.skipFetch ?? false,
     skipScore: options.skipScore ?? false,
     skipExport: options.skipExport ?? false,
+    skipAiDraft: options.skipAiDraft ?? false,
     skipChinaLeads: options.skipChinaLeads ?? false,
   };
 }
 
 function runPnpm(script: string, date: string, args: string[] = []): void {
-  const executable = process.platform === "win32" ? "npx.cmd" : "npx";
-  const result = spawnSync(executable, ["pnpm", script, ...args], {
+  const command = ["npx", "pnpm", script, ...args].join(" ");
+  const result = spawnSync(command, {
     cwd: process.cwd(),
     env: { ...process.env, INGEST_DATE: date },
     stdio: "inherit",
+    shell: true,
   });
+
+  if (result.error) {
+    throw result.error;
+  }
 
   if (result.status !== 0) {
     throw new Error(`${script} failed with exit code ${result.status ?? "unknown"}.`);
@@ -218,6 +228,7 @@ async function main(): Promise<void> {
     if (!options.skipFetch) runPnpm("ingest:fetch", options.date);
     if (!options.skipScore) runPnpm("ingest:score", options.date);
     if (!options.skipExport) runPnpm("ingest:export-scored", options.date);
+    if (!options.skipAiDraft) runPnpm("ingest:ai-draft", options.date);
     if (!options.skipChinaLeads) runPnpm("ingest:china-leads", options.date);
   }
 

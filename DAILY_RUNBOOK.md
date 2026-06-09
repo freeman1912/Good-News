@@ -16,8 +16,9 @@ The command runs:
 1. `ingest:fetch`
 2. `ingest:score`
 3. `ingest:export-scored`
-4. `ingest:china-leads`
-5. daily Markdown summary generation
+4. `ingest:ai-draft`
+5. `ingest:china-leads`
+6. daily Markdown summary generation
 
 It does **not** publish to `data/news/`.
 
@@ -29,6 +30,28 @@ After the command, check:
 - `data/candidates/YYYY-MM-DD.json` — AI candidate pool for manual review.
 - `data/rejected/YYYY-MM-DD.json` — rejected items for source tuning.
 - `data/candidates/YYYY-MM-DD.china-leads.json` — Chinese search/lead tasks.
+- `data/trials/YYYY-MM-DD-ai-picks.md` — small AI-selected draft review list.
+- `data/manual/YYYY-MM-DD.ai-draft.json` — publishable draft file after a quick source check.
+
+## AI Draft Picks
+
+Generate a small publish draft from the candidate pool:
+
+```powershell
+npx pnpm ingest:ai-draft -- --date YYYY-MM-DD
+```
+
+Then check:
+
+- `data/trials/YYYY-MM-DD-ai-picks.md`
+- `data/manual/YYYY-MM-DD.ai-draft.json`
+
+This is still not automatic publication. It narrows review to the few strongest
+items. To publish after a quick source check:
+
+```powershell
+npx pnpm ingest:publish-manual -- --date YYYY-MM-DD --file data/manual/YYYY-MM-DD.ai-draft.json
+```
 
 ## Summary Only
 
