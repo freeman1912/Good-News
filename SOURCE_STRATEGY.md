@@ -249,6 +249,25 @@ Do not publish reader-submitted material when:
 - the story looks like self-promotion, traffic bait, staged kindness, or brand PR;
 - the facts cannot be described concretely.
 
+## Long-Running Organization Watch
+
+Some of the best Chinese good-news leads will come from long-running volunteer,
+rescue, and public-good organizations rather than daily media.
+
+Good examples to watch:
+
+- rare-blood volunteer networks;
+- local rescue teams and Blue Sky Rescue teams;
+- community mutual-aid groups;
+- public-interest NGOs with project reports;
+- local service organizations with service counts and follow-ups.
+
+For rescue organizations, prefer completed-action reviews, annual/monthly
+summaries, training/public-safety outcomes, and organization profiles. Do not
+publish dramatic rescue footage while an incident is ongoing, and do not expose
+rescued people's private details. A rescue story should have a clear organization
+identity, completed outcome, and privacy-safe evidence.
+
 ## Daily Operating Rhythm
 
 1. Fetch candidates from the fixed source pool.

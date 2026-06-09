@@ -187,6 +187,52 @@ themes:
         trustLevel: watch
         url: search
 
+  - id: rescue-public-safety
+    label: 公益救援与公共安全
+    acceptance:
+      - has completed rescue, service, training, or disaster-prevention result
+      - has clear organization identity and registration or public information trail
+      - has mission count, service count, people helped, training count, or follow-up outcome
+      - protects privacy and dignity of rescued or vulnerable people
+    rejectHints:
+      - rescue in progress with privacy risk
+      - reposted dramatic video only
+      - self-praise without mission details
+      - fundraising ask without delivery evidence
+      - cross-region disaster response controversy without clear facts
+    sources:
+      - id: blue-sky-rescue-info
+        name: 蓝天救援信息公开平台
+        role: evidence
+        trustLevel: medium
+        url: https://www.blueskyrescue.cn/
+      - id: blue-sky-rescue-international
+        name: 蓝天救援国际合作中心
+        role: evidence
+        trustLevel: watch
+        url: https://bsr.blueskyrescue.org.cn/
+      - id: guangdong-blue-sky-rescue
+        name: 广东蓝天救援队
+        role: discovery
+        trustLevel: medium
+        url: https://www.bsr.gd.cn/
+      - id: local-blue-sky-rescue-teams
+        name: 各地蓝天救援队官网/信息公开页
+        role: discovery
+        trustLevel: watch
+        url: search
+      - id: foshan-pineapple-rescue
+        name: 佛山菠萝救援队
+        role: discovery
+        trustLevel: watch
+        url: search
+      - id: emergency-management-cross-check
+        name: 应急管理/红十字/地方媒体交叉核实
+        role: evidence
+        trustLevel: watch
+        officialRisk: true
+        url: search
+
 reviewRoutes:
   publishable:
     - result is already visible
