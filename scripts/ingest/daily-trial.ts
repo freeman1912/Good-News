@@ -10,6 +10,7 @@ interface CliOptions {
   skipScore: boolean;
   skipExport: boolean;
   skipAiDraft: boolean;
+  skipPublishAiDraft: boolean;
   skipChinaLeads: boolean;
 }
 
@@ -33,6 +34,7 @@ function parseArgs(argv: string[]): CliOptions {
     skipScore: false,
     skipExport: false,
     skipAiDraft: false,
+    skipPublishAiDraft: false,
     skipChinaLeads: false,
   };
 
@@ -54,6 +56,8 @@ function parseArgs(argv: string[]): CliOptions {
       options.skipExport = true;
     } else if (arg === "--skip-ai-draft") {
       options.skipAiDraft = true;
+    } else if (arg === "--skip-publish-ai-draft") {
+      options.skipPublishAiDraft = true;
     } else if (arg === "--skip-china-leads") {
       options.skipChinaLeads = true;
     } else {
@@ -72,6 +76,7 @@ function parseArgs(argv: string[]): CliOptions {
     skipScore: options.skipScore ?? false,
     skipExport: options.skipExport ?? false,
     skipAiDraft: options.skipAiDraft ?? false,
+    skipPublishAiDraft: options.skipPublishAiDraft ?? false,
     skipChinaLeads: options.skipChinaLeads ?? false,
   };
 }
@@ -136,6 +141,7 @@ async function writeSummary(date: string): Promise<void> {
   const scored = await readJsonArray<ScoredCandidateItem>(resolve(dataRoot, "candidates", `${date}.scored.json`));
   const candidates = await readJsonArray<ScoredCandidateItem>(resolve(dataRoot, "candidates", `${date}.json`));
   const rejected = await readJsonArray<ScoredCandidateItem>(resolve(dataRoot, "rejected", `${date}.json`));
+  const published = await readJsonArray<unknown>(resolve(dataRoot, "news", `${date}.json`));
   const fetchErrors = await readJsonArray<FetchError>(resolve(dataRoot, "rejected", `${date}.fetch-errors.json`));
   const chinaLeads = await readJsonArray<Record<string, unknown>>(resolve(dataRoot, "candidates", `${date}.china-leads.json`));
 
@@ -183,6 +189,7 @@ async function writeSummary(date: string): Promise<void> {
 - Scored items: ${scored.length}
 - Review candidates exported: ${candidates.length}
 - Rejected items exported: ${rejected.length}
+- Published homepage items: ${published.length}
 - Chinese lead tasks generated: ${chinaLeads.length}
 - Fetch errors: ${fetchErrors.length}
 
@@ -229,6 +236,22 @@ async function main(): Promise<void> {
     if (!options.skipScore) runPnpm("ingest:score", options.date);
     if (!options.skipExport) runPnpm("ingest:export-scored", options.date);
     if (!options.skipAiDraft) runPnpm("ingest:ai-draft", options.date);
+    if (!options.skipAiDraft && !options.skipPublishAiDraft) {
+      const draftPath = resolve(process.cwd(), "data", "manual", `${options.date}.ai-draft.json`);
+      const drafts = await readJsonArray<unknown>(draftPath);
+
+      if (drafts.length > 0) {
+        runPnpm("ingest:publish-manual", options.date, [
+          "--",
+          "--date",
+          options.date,
+          "--file",
+          `data/manual/${options.date}.ai-draft.json`,
+        ]);
+      } else {
+        console.log("[daily-trial] no AI draft items; skipped homepage publish");
+      }
+    }
     if (!options.skipChinaLeads) runPnpm("ingest:china-leads", options.date);
   }
 

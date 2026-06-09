@@ -17,10 +17,12 @@ The command runs:
 2. `ingest:score`
 3. `ingest:export-scored`
 4. `ingest:ai-draft`
-5. `ingest:china-leads`
-6. daily Markdown summary generation
+5. `ingest:publish-manual -- --file data/manual/YYYY-MM-DD.ai-draft.json`
+6. `ingest:china-leads`
+7. daily Markdown summary generation
 
-It does **not** publish to `data/news/`.
+It publishes the AI draft to the local/static homepage data file for that day.
+It does **not** push to GitHub or deploy publicly.
 
 ## Daily Files To Check
 
@@ -32,6 +34,13 @@ After the command, check:
 - `data/candidates/YYYY-MM-DD.china-leads.json` — Chinese search/lead tasks.
 - `data/trials/YYYY-MM-DD-ai-picks.md` — small AI-selected draft review list.
 - `data/manual/YYYY-MM-DD.ai-draft.json` — publishable draft file after a quick source check.
+- `data/news/YYYY-MM-DD.json` — homepage/RSS data generated from the AI draft.
+
+If you want to run the trial without updating the homepage data:
+
+```powershell
+npx pnpm trial:daily -- --date YYYY-MM-DD --skip-publish-ai-draft
+```
 
 ## AI Draft Picks
 
@@ -46,8 +55,8 @@ Then check:
 - `data/trials/YYYY-MM-DD-ai-picks.md`
 - `data/manual/YYYY-MM-DD.ai-draft.json`
 
-This is still not automatic publication. It narrows review to the few strongest
-items. To publish after a quick source check:
+This narrows review to the few strongest items. If you generated the draft alone
+and still need to publish it to the local homepage:
 
 ```powershell
 npx pnpm ingest:publish-manual -- --date YYYY-MM-DD --file data/manual/YYYY-MM-DD.ai-draft.json

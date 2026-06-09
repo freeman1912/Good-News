@@ -6,6 +6,7 @@
 - Scored items: 74
 - Review candidates exported: 17
 - Rejected items exported: 57
+- Published homepage items: 4
 - Chinese lead tasks generated: 92
 - Fetch errors: 1
 
