@@ -39,14 +39,15 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Fetch feed candidates
-        run: pnpm ingest:fetch
+      - name: Resolve ingest date
+        id: ingest-date
+        run: echo "date=$(TZ=Asia/Shanghai date +%F)" >> "$GITHUB_OUTPUT"
 
-      - name: Score candidates
-        run: pnpm ingest:score
-
-      - name: Route candidates
-        run: pnpm ingest:publish
+      - name: Run daily trial
+        env:
+          AI_REQUEST_TIMEOUT_MS: 20000
+          AI_SCORE_CONCURRENCY: 4
+        run: pnpm trial:daily -- --date "${{ steps.ingest-date.outputs.date }}"
 
       - name: Verify build
         run: pnpm build
@@ -57,13 +58,18 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: automation/good-news-ingest
           delete-branch: true
-          title: "chore: ingest good news candidates"
-          commit-message: "chore: ingest good news candidates"
+          title: "chore: publish daily good news"
+          commit-message: "chore: publish daily good news"
           body: |
             This PR was created by the scheduled ingestion workflow.
 
+            It runs the daily trial flow, writes homepage/RSS data, and keeps
+            Chinese leads as review-only tasks unless they meet publication
+            standards in a future pipeline.
+
             It does not publish reader-submitted GitHub Issues automatically.
-            Review `data/candidates/` and `data/rejected/` before merging.
+            Review `data/news/`, `data/candidates/`, `data/rejected/`, and
+            `data/trials/` before merging.
           labels: |
             automation
             needs-review

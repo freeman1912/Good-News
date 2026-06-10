@@ -11,6 +11,8 @@ Run a full daily trial:
 npx pnpm trial:daily -- --date YYYY-MM-DD
 ```
 
+If no date is provided, the script uses the Asia/Shanghai date.
+
 The command runs:
 
 1. `ingest:fetch`
@@ -23,6 +25,17 @@ The command runs:
 
 It publishes the AI draft to the local/static homepage data file for that day.
 It does **not** push to GitHub or deploy publicly.
+
+The scheduled GitHub Actions workflow runs the same daily trial flow with the
+Asia/Shanghai date and opens a pull request containing the generated homepage,
+RSS, candidate, rejected, and review files.
+
+For slow model responses, the workflow uses:
+
+```powershell
+AI_REQUEST_TIMEOUT_MS=20000
+AI_SCORE_CONCURRENCY=4
+```
 
 ## Daily Files To Check
 

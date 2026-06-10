@@ -322,9 +322,19 @@ function extractJsonObject(content: string): unknown {
   }
 }
 
-async function scoreWithAi(candidate: CandidateItem, provider: AiProviderConfig): Promise<AiNewsScore> {
+function positiveIntegerFromEnv(name: string, fallback: number): number {
+  const value = Number(process.env[name]);
+  return Number.isInteger(value) && value > 0 ? value : fallback;
+}
+
+async function scoreWithAi(
+  candidate: CandidateItem,
+  provider: AiProviderConfig,
+  timeoutMs: number,
+): Promise<AiNewsScore> {
   const response = await fetch(`${provider.baseUrl}/chat/completions`, {
     method: "POST",
+    signal: AbortSignal.timeout(timeoutMs),
     headers: {
       Authorization: `Bearer ${provider.apiKey}`,
       "Content-Type": "application/json",
@@ -410,39 +420,64 @@ async function main(): Promise<void> {
   const scoredAt = new Date().toISOString();
   const provider = getAiProvider();
   const scored: ScoredCandidateItem[] = [];
+  const requestTimeoutMs = positiveIntegerFromEnv("AI_REQUEST_TIMEOUT_MS", 45000);
+  const concurrency = Math.min(positiveIntegerFromEnv("AI_SCORE_CONCURRENCY", 3), Math.max(candidates.length, 1));
+  let nextCandidateIndex = 0;
 
   if (provider) {
     console.log(`[score] using ${provider.name} model ${provider.model}`);
+    console.log(`[score] request timeout ${requestTimeoutMs}ms; concurrency ${concurrency}`);
   } else {
     console.log("[score] no AI provider configured; routing all items to manual candidates");
   }
 
-  for (const candidate of candidates) {
+  async function scoreCandidate(candidate: CandidateItem, index: number): Promise<ScoredCandidateItem> {
     let aiScore: AiNewsScore | undefined;
     let routeError: string | undefined;
 
     if (provider) {
       try {
-        aiScore = await scoreWithAi(candidate, provider);
+        aiScore = await scoreWithAi(candidate, provider, requestTimeoutMs);
       } catch (error) {
         routeError = error instanceof Error ? error.message : String(error);
       }
     }
 
     const route = routeCandidate(candidate, aiScore);
-    scored.push({
+    const scoredCandidate: ScoredCandidateItem = {
       ...candidate,
       aiScore,
       route: route.route,
       routeReason: routeError ? `AI 评分失败：${routeError}` : route.reason,
       scoredAt,
-    });
+    };
 
-    console.log(`[score] ${candidate.id}: ${route.route}`);
+    console.log(`[score] ${index + 1}/${candidates.length} ${candidate.id}: ${route.route}`);
+    return scoredCandidate;
   }
 
-  await writeFile(outputPath, `${JSON.stringify(scored, null, 2)}\n`, "utf-8");
-  console.log(`[score] wrote ${scored.length} scored candidates to ${outputPath}`);
+  async function scoreWorker(): Promise<void> {
+    while (nextCandidateIndex < candidates.length) {
+      const index = nextCandidateIndex;
+      nextCandidateIndex += 1;
+      const candidate = candidates[index];
+
+      if (!candidate) continue;
+
+      scored[index] = await scoreCandidate(candidate, index);
+    }
+  }
+
+  await Promise.all(Array.from({ length: concurrency }, () => scoreWorker()));
+
+  const compactScored = scored.filter(Boolean);
+
+  if (compactScored.length !== candidates.length) {
+    throw new Error(`Scored ${compactScored.length} candidates, expected ${candidates.length}.`);
+  }
+
+  await writeFile(outputPath, `${JSON.stringify(compactScored, null, 2)}\n`, "utf-8");
+  console.log(`[score] wrote ${compactScored.length} scored candidates to ${outputPath}`);
 }
 
 main().catch((error) => {

@@ -23,7 +23,14 @@ interface FetchError {
 }
 
 function todayKey(): string {
-  return process.env.INGEST_DATE || new Date().toISOString().slice(0, 10);
+  if (process.env.INGEST_DATE) return process.env.INGEST_DATE;
+
+  return new Intl.DateTimeFormat("sv-SE", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
 }
 
 function parseArgs(argv: string[]): CliOptions {
