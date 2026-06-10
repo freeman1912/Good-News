@@ -70,6 +70,11 @@ Use these files for manual review. They are not published content.
 
 ## Cloudflare Pages
 
+Production project:
+
+- Project name: `good-news`
+- Public URL: `https://good-news-8ov.pages.dev`
+
 Recommended settings:
 
 - Framework preset: Astro
@@ -85,6 +90,19 @@ https://good-news.example.com
 ```
 
 RSS feeds use `PUBLIC_SITE_URL` for absolute site metadata. If the variable is missing, local builds fall back to `http://localhost:4321`.
+
+Manual deployment from this workspace:
+
+```powershell
+$env:PUBLIC_SITE_URL="https://good-news-8ov.pages.dev"
+npx pnpm build
+npx pnpm deploy:cloudflare
+```
+
+The first public deployment was created with Wrangler direct upload. The current
+Cloudflare Pages project is not yet Git-connected. Until GitHub deployment
+secrets are configured, deploy manually with the command above after merging
+content or code changes.
 
 ## GitHub Actions
 
