@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { spawnSync } from "node:child_process";
 import { resolve } from "node:path";
-import type { ScoredCandidateItem } from "../../src/lib/types";
+import type { CandidateItem, ScoredCandidateItem } from "../../src/lib/types";
 
 interface CliOptions {
   date: string;
@@ -144,7 +144,7 @@ function mdTable(rows: string[][]): string {
 
 async function writeSummary(date: string): Promise<void> {
   const dataRoot = resolve(process.cwd(), "data");
-  const fetched = await readJsonArray<unknown>(resolve(dataRoot, "candidates", `${date}.fetched.json`));
+  const fetched = await readJsonArray<CandidateItem>(resolve(dataRoot, "candidates", `${date}.fetched.json`));
   const scored = await readJsonArray<ScoredCandidateItem>(resolve(dataRoot, "candidates", `${date}.scored.json`));
   const candidates = await readJsonArray<ScoredCandidateItem>(resolve(dataRoot, "candidates", `${date}.json`));
   const rejected = await readJsonArray<ScoredCandidateItem>(resolve(dataRoot, "rejected", `${date}.json`));
@@ -153,6 +153,8 @@ async function writeSummary(date: string): Promise<void> {
   const chinaLeads = await readJsonArray<Record<string, unknown>>(resolve(dataRoot, "candidates", `${date}.china-leads.json`));
 
   const topCandidates = [...candidates].sort((left, right) => scoreOf(right) - scoreOf(left)).slice(0, 12);
+  const chineseFetchedCount = fetched.filter((item) => item.language === "zh").length;
+  const chineseReviewCount = candidates.filter((item) => item.language === "zh").length;
   const candidateRows = [
     ["Source", "Title", "Good", "Evidence", "Public", "PR Risk"],
     ...topCandidates.map((item) => [
@@ -193,8 +195,10 @@ async function writeSummary(date: string): Promise<void> {
 ## What Ran
 
 - Feed candidates fetched: ${fetched.length}
+- Chinese webpage candidates fetched: ${chineseFetchedCount}
 - Scored items: ${scored.length}
 - Review candidates exported: ${candidates.length}
+- Chinese review candidates exported: ${chineseReviewCount}
 - Rejected items exported: ${rejected.length}
 - Published homepage items: ${published.length}
 - Chinese lead tasks generated: ${chinaLeads.length}

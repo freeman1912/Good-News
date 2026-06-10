@@ -31,6 +31,11 @@ export interface NewsSource {
   type: SourceType;
   url: string;
   rssUrl?: string;
+  crawlUrls?: string[];
+  crawlIncludeUrlPatterns?: string[];
+  crawlExcludeUrlPatterns?: string[];
+  crawlTitleKeywords?: string[];
+  crawlMaxLinks?: number;
   topics?: TopicSlug[];
   trustLevel: TrustLevel;
   officialRisk?: boolean;

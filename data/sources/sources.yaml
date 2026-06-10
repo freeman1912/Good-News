@@ -158,6 +158,24 @@
   regionFocus: china
   type: site
   url: https://www.chinadevelopmentbrief.org.cn/
+  crawlUrls:
+    - https://www.chinadevelopmentbrief.org.cn/
+  crawlIncludeUrlPatterns:
+    - chinadevelopmentbrief\.org\.cn/news/detail/
+  crawlExcludeUrlPatterns:
+    - /category/
+    - /tag/
+    - /author/
+  crawlTitleKeywords:
+    - 公益
+    - 社区
+    - 志愿
+    - 救助
+    - 乡村
+    - 教育
+    - 儿童
+    - 环境
+  crawlMaxLinks: 8
   topics:
     - charity-mutual-aid
     - public-improvement
@@ -172,6 +190,22 @@
   regionFocus: china
   type: ngo
   url: https://www.fon.org.cn/
+  crawlUrls:
+    - https://www.fon.org.cn/
+  crawlIncludeUrlPatterns:
+    - fon\.org\.cn/.+
+  crawlExcludeUrlPatterns:
+    - /join
+    - /donate
+  crawlTitleKeywords:
+    - 保护
+    - 修复
+    - 行动
+    - 志愿
+    - 环境
+    - 自然
+    - 项目
+  crawlMaxLinks: 6
   topics:
     - environment-animals
     - public-improvement
@@ -186,6 +220,19 @@
   regionFocus: china
   type: site
   url: https://www.zhishifenzi.com/
+  crawlUrls:
+    - https://www.zhishifenzi.com/
+  crawlIncludeUrlPatterns:
+    - zhishifenzi\.com/.+
+  crawlTitleKeywords:
+    - 科学
+    - 医学
+    - 治疗
+    - 疾病
+    - 研究
+    - 教育
+    - 健康
+  crawlMaxLinks: 6
   topics:
     - science-health
     - education-culture
@@ -199,6 +246,20 @@
   regionFocus: china
   type: site
   url: https://health.caixin.com/
+  crawlUrls:
+    - https://health.caixin.com/
+  crawlIncludeUrlPatterns:
+    - caixin\.com/.+
+  crawlTitleKeywords:
+    - 医保
+    - 医疗
+    - 患者
+    - 救助
+    - 公共卫生
+    - 罕见病
+    - 治疗
+    - 改善
+  crawlMaxLinks: 6
   topics:
     - science-health
     - public-improvement
@@ -212,6 +273,20 @@
   regionFocus: china
   type: search
   url: https://www.infzm.com/
+  crawlUrls:
+    - https://www.infzm.com/
+  crawlIncludeUrlPatterns:
+    - infzm\.com/.+
+  crawlTitleKeywords:
+    - 公益
+    - 救助
+    - 志愿
+    - 社区
+    - 环保
+    - 教育
+    - 医疗
+    - 改善
+  crawlMaxLinks: 6
   topics:
     - public-improvement
     - charity-mutual-aid
@@ -227,6 +302,21 @@
   regionFocus: china
   type: search
   url: https://www.thepaper.cn/
+  crawlUrls:
+    - https://www.thepaper.cn/
+  crawlIncludeUrlPatterns:
+    - thepaper\.cn/newsDetail_forward_
+  crawlTitleKeywords:
+    - 公益
+    - 志愿
+    - 救助
+    - 帮扶
+    - 修复
+    - 医疗
+    - 科研
+    - 环保
+    - 无障碍
+  crawlMaxLinks: 8
   topics:
     - public-improvement
     - people-kindness
@@ -235,3 +325,84 @@
   trustLevel: watch
   officialRisk: true
   notes: Broad domestic news discovery source. Treat warm/positive columns as high-risk for propaganda tone; publish only concrete, independently checkable items.
+
+- id: chinadialogue-zh
+  name: 中外对话
+  language: zh
+  regionFocus: china
+  type: site
+  url: https://dialogue.earth/zh/
+  crawlUrls:
+    - https://dialogue.earth/zh/
+  crawlIncludeUrlPatterns:
+    - dialogue\.earth/zh/.+
+  crawlTitleKeywords:
+    - 保护
+    - 修复
+    - 气候
+    - 生物多样性
+    - 环境
+    - 能源
+    - 社区
+  crawlMaxLinks: 8
+  topics:
+    - environment-animals
+    - public-improvement
+  trustLevel: medium
+  officialRisk: false
+  notes: Environmental reporting and analysis source. Use concrete project and policy-result items; reject commentary-only pieces.
+
+- id: sciencenet-news
+  name: 科学网 / 中国科学报
+  language: zh
+  regionFocus: china
+  type: site
+  url: https://news.sciencenet.cn/
+  crawlUrls:
+    - https://news.sciencenet.cn/
+  crawlIncludeUrlPatterns:
+    - news\.sciencenet\.cn/htmlnews/.+
+  crawlTitleKeywords:
+    - 治疗
+    - 医疗
+    - 患者
+    - 疾病
+    - 发现
+    - 突破
+    - 保护
+    - 修复
+  crawlMaxLinks: 8
+  topics:
+    - science-health
+    - environment-animals
+    - education-culture
+  trustLevel: medium
+  officialRisk: false
+  notes: Science and research discovery source. Avoid early-stage hype; prefer real-world use or independently supported results.
+
+- id: china-social-welfare-foundation
+  name: 中国社会福利基金会
+  language: zh
+  regionFocus: china
+  type: ngo
+  url: https://www.cswef.org/
+  crawlUrls:
+    - https://www.cswef.org/
+  crawlIncludeUrlPatterns:
+    - cswef\.org/cswef/(news|info)/detail/
+  crawlTitleKeywords:
+    - 救助
+    - 资助
+    - 公益
+    - 项目
+    - 支援
+    - 帮扶
+    - 志愿
+    - 康复
+  crawlMaxLinks: 8
+  topics:
+    - charity-mutual-aid
+    - public-improvement
+  trustLevel: medium
+  officialRisk: false
+  notes: Primary charity source. Treat as single-source/organizational by default; publish only with visible result or supporting source.

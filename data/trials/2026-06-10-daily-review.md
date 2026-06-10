@@ -2,42 +2,50 @@
 
 ## What Ran
 
-- Feed candidates fetched: 70
-- Scored items: 70
-- Review candidates exported: 9
-- Rejected items exported: 61
+- Feed candidates fetched: 88
+- Chinese webpage candidates fetched: 23
+- Scored items: 88
+- Review candidates exported: 20
+- Chinese review candidates exported: 12
+- Rejected items exported: 68
 - Published homepage items: 1
 - Chinese lead tasks generated: 92
-- Fetch errors: 1
+- Fetch errors: 2
 
 ## Route Counts
 
 | Route | Count |
 | --- | --- |
-| rejected | 61 |
-| candidate | 9 |
+| rejected | 68 |
+| candidate | 20 |
 
 ## Candidate Sources
 
 | Candidate Source | Count |
 | --- | --- |
+| 科学网 / 中国科学报 | 6 |
 | Reasons to be Cheerful | 5 |
-| Positive News | 2 |
-| Upworthy | 2 |
+| 中国社会福利基金会 | 3 |
+| Upworthy | 3 |
+| 南方周末 | 2 |
+| 中外对话 | 1 |
 
 ## Top Review Candidates
 
 | Source | Title | Good | Evidence | Public | PR Risk |
 | --- | --- | --- | --- | --- | --- |
-| Upworthy | A 5-year-old fell asleep on the wrong train. He found his way home 25 years later on Google Earth. | 85 | 70 | 80 | 5 |
-| Upworthy | Autistic teen inspires local Mississippi police to create identifying sticker for cars. Other states want in. | 85 | 70 | 80 | 10 |
-| Positive News | Corporate courage: how cross-sector talent is powering renewables innovation | 80 | 70 | 80 | 5 |
-| Positive News | What went right this week: the good news that matters | 85 | 60 | 80 | 5 |
-| Reasons to be Cheerful | What We’re Reading: Denver&#8217;s Newest Clean Energy Source Will Be Sewage | 80 | 70 | 80 | 10 |
-| Reasons to be Cheerful | The Spark: Banishing Cars With a Block Party | 80 | 70 | 70 | 10 |
-| Reasons to be Cheerful | Banking Like the Planet Depends On It | 75 | 70 | 70 | 10 |
-| Reasons to be Cheerful | What We’re Reading: World Cup Carousing — With Reusable Cups | 70 | 70 | 70 | 10 |
-| Reasons to be Cheerful | What We’re Reading: Why Young Entrepreneurs Are Flocking to Britain&#8217;s Old-School Markets | 70 | 50 | 60 | 10 |
+| 科学网 / 中国科学报 | 中国科研团队发现迄今最遥远非喷流潮汐撕裂恒星事件 | 80 | 75 | 85 | 5 |
+| Upworthy | A 5-year-old fell asleep on the wrong train. He found his way home 25 years later on Google Earth. | 85 | 75 | 70 | 5 |
+| 中外对话 | 加纳设立首个海洋保护区 | 85 | 70 | 80 | 10 |
+| 科学网 / 中国科学报 | 全球首创！国产喷墨打印头核心材料实现自主突破 | 85 | 70 | 80 | 10 |
+| 科学网 / 中国科学报 | 20世纪20年代的结核病疫苗有望治疗糖尿病 | 85 | 70 | 75 | 5 |
+| Upworthy | Zimbabwe introduced the &#8216;Friendship Bench.&#8217; 18 years later, the U.S. is doing it, and it could be a game changer for mental health. | 85 | 60 | 80 | 5 |
+| Reasons to be Cheerful | What We’re Reading: World Cup Carousing — With Reusable Cups | 80 | 80 | 70 | 10 |
+| 中国社会福利基金会 | “守护记忆”公益讲座走进杭州定安路社区 | 80 | 70 | 80 | 10 |
+| 科学网 / 中国科学报 | 生酮饮食显示出治疗厌食症潜力 | 85 | 70 | 80 | 20 |
+| Upworthy | Autistic teen inspires local Mississippi police to create identifying sticker for cars. Other states want in. | 85 | 60 | 75 | 5 |
+| 中国社会福利基金会 | 叶柏公益携手马逛逛小火锅助力宁夏隆德县教育发展 | 80 | 70 | 75 | 10 |
+| 南方周末 | 2026中欧校友创业大赛医疗健康专场在广州生物岛圆满落幕 | 75 | 80 | 70 | 10 |
 
 ## Chinese Lead Tasks
 
@@ -52,7 +60,8 @@
 
 | Source | Error |
 | --- | --- |
-| Good News Network | fetch failed: Connect Timeout Error (attempted addresses: 2a03:2880:f126:83:face:b00c:0:25de:443, 173.236.182.137:443, timeout: 10000ms) |
+| Good News Network | The operation was aborted due to timeout |
+| Positive News | The operation was aborted due to timeout |
 
 ## Human Review Notes
 

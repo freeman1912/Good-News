@@ -42,6 +42,32 @@ const abstractTitlePatterns = [
   /says new report/i,
 ];
 
+const chinesePrimarySourceIds = new Set([
+  "china-social-welfare-foundation",
+  "friends-of-nature",
+]);
+
+const chineseHoldTitlePatterns = [
+  /讲座/u,
+  /培训/u,
+  /会议/u,
+  /论坛/u,
+  /大赛/u,
+  /圆满/u,
+  /开讲/u,
+  /携手/u,
+  /助力/u,
+  /有望/u,
+  /潜力/u,
+  /研究显示/u,
+  /研制/u,
+  /首片/u,
+  /核心材料/u,
+  /发现迄今/u,
+  /拟立项/u,
+  /公示/u,
+];
+
 function todayKey(): string {
   return process.env.INGEST_DATE || new Date().toISOString().slice(0, 10);
 }
@@ -153,6 +179,29 @@ function decide(item: ScoredCandidateItem, includeWatch: boolean): DraftDecision
 
   if (item.sourceTrustLevel === "watch" && !includeWatch) {
     return { item, route: "hold", reason: "观察级来源默认不进入自动草稿。", qualityScore: quality };
+  }
+
+  if (item.language === "zh") {
+    if (item.officialRisk) {
+      return { item, route: "hold", reason: "中文官方风险来源不进入自动草稿。", qualityScore: quality };
+    }
+
+    if (chinesePrimarySourceIds.has(item.sourceId)) {
+      return { item, route: "hold", reason: "中文机构/项目自述先进入人工复核，不自动发布。", qualityScore: quality };
+    }
+
+    if (chineseHoldTitlePatterns.some((pattern) => pattern.test(title))) {
+      return { item, route: "hold", reason: "中文早期研究、会议活动或机构稿先进入人工复核。", qualityScore: quality };
+    }
+
+    if (
+      score.evidenceScore < 75 ||
+      score.publicValueScore < 80 ||
+      score.specificityScore < 75 ||
+      score.prRiskScore > 15
+    ) {
+      return { item, route: "hold", reason: "中文候选未达到更高自动草稿阈值。", qualityScore: quality };
+    }
   }
 
   if (titleRejectPatterns.some((pattern) => pattern.test(title))) {
