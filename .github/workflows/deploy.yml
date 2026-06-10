@@ -1,0 +1,51 @@
+name: Deploy Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+
+concurrency:
+  group: cloudflare-pages-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PUBLIC_SITE_URL: https://good-news-8ov.pages.dev
+      PUBLIC_GITHUB_NEW_ISSUE_URL: https://github.com/freeman1912/Good-News/issues/new
+      PUBLIC_GITHUB_ISSUE_TEMPLATE_URL: https://github.com/freeman1912/Good-News/issues/new?template=good-news-lead.yml
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.5.2
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 64bc71e4f65e4ef240f94643ca88ee98
+          command: pages deploy dist --project-name good-news --branch main

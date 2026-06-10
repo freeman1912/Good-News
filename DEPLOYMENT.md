@@ -100,9 +100,19 @@ npx pnpm deploy:cloudflare
 ```
 
 The first public deployment was created with Wrangler direct upload. The current
-Cloudflare Pages project is not yet Git-connected. Until GitHub deployment
-secrets are configured, deploy manually with the command above after merging
-content or code changes.
+Cloudflare Pages project is a Direct Upload project. Automatic deployment is
+handled by `.github/workflows/deploy.yml`, which runs on pushes to `main`.
+
+To enable GitHub automatic deployment, add this repository secret:
+
+- `CLOUDFLARE_API_TOKEN`
+
+The token needs permission to deploy the `good-news` Cloudflare Pages project.
+The workflow uses account ID `64bc71e4f65e4ef240f94643ca88ee98` and production
+URL `https://good-news-8ov.pages.dev`.
+
+Until that secret is configured, deploy manually with the command above after
+merging content or code changes.
 
 ## GitHub Actions
 
