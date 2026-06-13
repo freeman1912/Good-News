@@ -19,6 +19,8 @@
     "ingest:china-leads": "tsx scripts/ingest/generate-china-leads.ts",
     "ingest": "pnpm ingest:fetch && pnpm ingest:score && pnpm ingest:publish",
     "trial:daily": "tsx scripts/ingest/daily-trial.ts",
+    "weekly:draft": "tsx scripts/ingest/weekly-draft.ts",
+    "weekly:publish": "tsx scripts/ingest/weekly-publish.ts",
     "deploy:cloudflare": "wrangler pages deploy dist --project-name good-news --branch main --commit-dirty=true"
   },
   "dependencies": {

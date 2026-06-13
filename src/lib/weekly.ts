@@ -133,7 +133,7 @@ function validateWatchItem(value: unknown, context: string): WeeklyWatchItem {
   };
 }
 
-function validateWeeklyIssue(value: unknown, context: string): WeeklyIssue {
+export function validateWeeklyIssue(value: unknown, context: string): WeeklyIssue {
   if (!isRecord(value)) {
     throw new Error(`${context} must be an object.`);
   }
