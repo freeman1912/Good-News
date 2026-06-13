@@ -1,6 +1,6 @@
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { getWeekId, getWeekRange, isDateInWeekRange } from "../../src/lib/weeks";
+import { filterItemsByWeek, getWeekId, getWeekRange, isDateInWeekRange } from "../../src/lib/weeks";
 import type { ScoredCandidateItem, WeeklyGoodNewsItem, WeeklyIssue, WeeklyWatchItem } from "../../src/lib/types";
 
 interface CliOptions {
@@ -167,7 +167,7 @@ async function collectCandidates(weekId: string): Promise<ScoredCandidateItem[]>
     dailyFiles.map((file) => readJsonArray<ScoredCandidateItem>(resolve(candidateDir, file))),
   );
 
-  return batches.flat();
+  return filterItemsByWeek(batches.flat(), weekId, (item) => item.publishedAt);
 }
 
 function normalizeUrl(value: string): string {

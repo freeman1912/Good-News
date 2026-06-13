@@ -1,93 +1,48 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import WeeklyIssue from "@/components/WeeklyIssue.astro";
-import { getLatestWeeklyIssue } from "@/lib/weekly";
+import { getAllWeeklyIssues } from "@/lib/weekly";
 
-const latestIssue = await getLatestWeeklyIssue();
+const issues = await getAllWeeklyIssues();
+const latestIssue = issues[0] ?? null;
 const itemCount = latestIssue?.items.length ?? 0;
+const issueNumber = latestIssue ? issues.length : 0;
+const weekMatch = latestIssue?.id.match(/^(\d{4})-W(\d{2})$/);
+const issueLabel = weekMatch ? `${weekMatch[1]} 年第 ${Number(weekMatch[2])} 周` : latestIssue?.id;
 ---
 
 <BaseLayout>
-  <section class="mx-auto grid max-w-5xl gap-7 px-4 py-8 sm:px-6 sm:py-10">
-    <div class="border-b border-border pb-7">
-      <div class="grid gap-5 sm:grid-cols-[1fr_auto] sm:items-end">
-        <div class="max-w-2xl border-l-2 border-tertiary pl-4">
-          <p class="text-sm text-muted">Good News Weekly</p>
-          <h1 class="mt-2 text-3xl font-bold leading-tight text-ink sm:text-4xl">好消息周报</h1>
-          <p class="mt-3 text-base leading-8 text-muted">
-            每周从嘈杂的信息里筛出真实、具体、可验证、普通人能理解的好事。不是正能量口号，而是看看世界哪里正在被认真修补。
-          </p>
-        </div>
-        <div class="flex flex-wrap gap-2 sm:justify-end">
-          <a class="rounded-sm bg-primary px-4 py-2.5 text-sm font-medium text-white transition hover:bg-primary-hover" href="/rss">
-            订阅 RSS
-          </a>
-          <a class="rounded-sm border border-border bg-surface/80 px-4 py-2.5 text-sm font-medium text-ink transition hover:bg-surface-muted" href="/submit">
-            提交线索
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <section aria-labelledby="issue-heading" class="grid gap-4">
-      <div class="flex items-start justify-between gap-4 border-b border-border pb-3">
-        <div>
-          <h2 id="issue-heading" class="text-xl font-semibold text-ink">最新一期</h2>
-          <p class="mt-1 text-sm text-muted">公开页面读取的是周报数据；每日抓取只作为后台发现和筛选。</p>
-        </div>
-        <span class="shrink-0 border-l border-tertiary pl-3 text-sm font-medium text-primary">{itemCount} 条</span>
-      </div>
+  <section class="mx-auto grid max-w-4xl gap-6 px-4 py-8 sm:px-6 sm:py-10">
+    <section aria-labelledby="issue-heading" class="grid gap-5">
       {
         !latestIssue ? (
           <article class="rounded-lg border border-dashed border-border bg-surface p-5">
             <p class="text-sm text-muted">还没有发布周报。我们宁愿少发，也不为了凑数降低标准。</p>
           </article>
         ) : (
-          <WeeklyIssue issue={latestIssue} />
+          <>
+            <header class="border-b border-border pb-5">
+              <p class="text-sm font-medium text-primary">{issueLabel}</p>
+              <div class="mt-2 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                  <h1 id="issue-heading" class="text-3xl font-semibold leading-tight text-ink sm:text-4xl">
+                    第 {issueNumber} 期
+                  </h1>
+                  <p class="mt-2 text-sm leading-6 text-muted">
+                    {latestIssue.weekStart} 至 {latestIssue.weekEnd}
+                  </p>
+                </div>
+                <div class="flex flex-wrap items-center gap-3 text-sm">
+                  <span class="border-l border-tertiary pl-3 font-medium text-primary">{itemCount} 条</span>
+                  <a class="font-medium text-primary hover:underline" href="/rss">RSS</a>
+                  <a class="font-medium text-primary hover:underline" href="/submit">提交线索</a>
+                </div>
+              </div>
+            </header>
+            <WeeklyIssue issue={latestIssue} showHeader={false} compact />
+          </>
         )
       }
-    </section>
-
-    <section class="border-y border-border py-5">
-      <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <h2 class="text-lg font-semibold text-ink">用 RSS 接收每周的好消息</h2>
-          <p class="mt-2 max-w-2xl text-sm leading-6 text-muted">
-            不需要算法推荐，也不需要社交平台。把好消息周报加入你的 RSS 阅读器，安静地接收更新。
-          </p>
-        </div>
-        <a class="text-sm font-medium text-primary hover:underline" href="/rss">查看 RSS 订阅</a>
-      </div>
-    </section>
-
-    <section class="grid gap-4 border-b border-border pb-6">
-      <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-        <div>
-          <h2 class="text-lg font-semibold text-ink">一起发现真实发生的好事</h2>
-          <p class="mt-2 max-w-2xl text-sm leading-6 text-muted">
-            你看到的公益项目、身边善举、长期做好事的人，或者媒体里被忽略的建设性报道，都可以先作为线索提交。它们会经过核实，不会自动进入周报。
-          </p>
-        </div>
-        <a class="shrink-0 rounded-sm border border-border bg-surface/80 px-4 py-2.5 text-sm font-medium text-ink transition hover:bg-surface-muted" href="/submit">
-          提交好消息线索
-        </a>
-      </div>
-      <div class="grid gap-3 sm:grid-cols-3">
-        <p class="border-t border-border pt-3 text-sm leading-6 text-muted">媒体线索：从南方周末、三联、公众号或其他可信来源里发现可能的好消息。</p>
-        <p class="border-t border-border pt-3 text-sm leading-6 text-muted">身边小事：目击或亲历的善意，可以先进入待核实线索池。</p>
-        <p class="border-t border-border pt-3 text-sm leading-6 text-muted">日行一善：鼓励记录自己做过的好事，但公开展示必须标注为自述。</p>
-      </div>
-    </section>
-
-    <section class="grid gap-x-8 gap-y-3 sm:grid-cols-2">
-      {[
-        "真实具体：每条消息都要有明确的人、事、地点或结果。",
-        "可验证：保留来源和原文链接，不收录无法核实的故事。",
-        "非宣传：不做口号式正能量，不替任何机构喊话。",
-        "建设性：优先收录问题正在被解决、善意正在发生的消息。",
-      ].map((principle) => (
-        <p class="border-t border-border pt-3 text-sm leading-6 text-muted">{principle}</p>
-      ))}
     </section>
   </section>
 </BaseLayout>
