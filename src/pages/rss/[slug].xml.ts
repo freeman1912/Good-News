@@ -1,7 +1,7 @@
 import rss from "@astrojs/rss";
 import { topicDefinitions } from "@/lib/categories";
-import { getNewsByTopic } from "@/lib/news";
 import { getFeedMetadata, newsToRssItems } from "@/lib/rss";
+import { getWeeklyStoriesByTopic } from "@/lib/weekly";
 import type { TopicSlug } from "@/lib/types";
 
 export function getStaticPaths() {
@@ -14,7 +14,7 @@ export function getStaticPaths() {
 export async function GET({ props }: { props: { topic: (typeof topicDefinitions)[number] } }) {
   const topic = props.topic;
   const metadata = getFeedMetadata(topic.label);
-  const news = await getNewsByTopic(topic.slug as TopicSlug);
+  const news = await getWeeklyStoriesByTopic(topic.slug as TopicSlug);
 
   return rss({
     title: metadata.title,

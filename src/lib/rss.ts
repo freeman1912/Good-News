@@ -63,7 +63,7 @@ export function getFeedMetadata(topicLabel?: string): {
   return {
     title: `${prefix}${site.name}`,
     description: topicLabel
-      ? `${site.name}「${topicLabel}」主题 RSS：真实、具体、可核实的中文好消息摘要。`
+      ? `${site.name}「${topicLabel}」主题 RSS：真实、具体、可核实、普通人能理解的周报条目。`
       : site.description,
     siteUrl: getSiteUrl(),
   };

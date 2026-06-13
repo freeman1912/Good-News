@@ -1,16 +1,10 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import DateGroup from "@/components/DateGroup.astro";
-import FilterBar from "@/components/FilterBar.astro";
-import { getHomeNewsModel } from "@/lib/news";
+import WeeklyIssue from "@/components/WeeklyIssue.astro";
+import { getLatestWeeklyIssue } from "@/lib/weekly";
 
-const today = new Intl.DateTimeFormat("zh-CN", {
-  dateStyle: "medium",
-}).format(new Date());
-
-const newsModel = await getHomeNewsModel();
-const visibleGroups = newsModel.groups;
-const latestCount = newsModel.latest.length;
+const latestIssue = await getLatestWeeklyIssue();
+const itemCount = latestIssue?.items.length ?? 0;
 ---
 
 <BaseLayout>
@@ -18,10 +12,10 @@ const latestCount = newsModel.latest.length;
     <div class="border-b border-border pb-7">
       <div class="grid gap-5 sm:grid-cols-[1fr_auto] sm:items-end">
         <div class="max-w-2xl border-l-2 border-tertiary pl-4">
-          <p class="text-sm text-muted">{today}</p>
-          <h1 class="mt-2 text-3xl font-bold leading-tight text-ink sm:text-4xl">今日好消息</h1>
+          <p class="text-sm text-muted">Good News Weekly</p>
+          <h1 class="mt-2 text-3xl font-bold leading-tight text-ink sm:text-4xl">好消息周报</h1>
           <p class="mt-3 text-base leading-8 text-muted">
-            每天都有具体的人和事，在让世界变好。这里展示今天或最近 24 小时内收录的真实好消息。
+            每周从嘈杂的信息里筛出真实、具体、可验证、普通人能理解的好事。不是正能量口号，而是看看世界哪里正在被认真修补。
           </p>
         </div>
         <div class="flex flex-wrap gap-2 sm:justify-end">
@@ -35,25 +29,21 @@ const latestCount = newsModel.latest.length;
       </div>
     </div>
 
-    <FilterBar />
-
-    <section aria-labelledby="timeline-heading" class="grid gap-4">
+    <section aria-labelledby="issue-heading" class="grid gap-4">
       <div class="flex items-start justify-between gap-4 border-b border-border pb-3">
         <div>
-          <h2 id="timeline-heading" class="text-xl font-semibold text-ink">今日时间线</h2>
-          <p class="mt-1 text-sm text-muted">当前读取的是示例数据，用来验证数据模型和日期分组。</p>
+          <h2 id="issue-heading" class="text-xl font-semibold text-ink">最新一期</h2>
+          <p class="mt-1 text-sm text-muted">公开页面读取的是周报数据；每日抓取只作为后台发现和筛选。</p>
         </div>
-        <span class="shrink-0 border-l border-tertiary pl-3 text-sm font-medium text-primary">{latestCount} 条</span>
+        <span class="shrink-0 border-l border-tertiary pl-3 text-sm font-medium text-primary">{itemCount} 条</span>
       </div>
       {
-        visibleGroups.length === 0 ? (
+        !latestIssue ? (
           <article class="rounded-lg border border-dashed border-border bg-surface p-5">
-            <p class="text-sm text-muted">今天还没有足够可信的好消息入选。我们宁愿少发，也不为了凑数降低标准。</p>
+            <p class="text-sm text-muted">还没有发布周报。我们宁愿少发，也不为了凑数降低标准。</p>
           </article>
         ) : (
-          visibleGroups.map((group) => (
-            <DateGroup group={group} />
-          ))
+          <WeeklyIssue issue={latestIssue} />
         )
       }
     </section>
@@ -61,9 +51,9 @@ const latestCount = newsModel.latest.length;
     <section class="border-y border-border py-5">
       <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h2 class="text-lg font-semibold text-ink">用 RSS 接收每天的好消息</h2>
+          <h2 class="text-lg font-semibold text-ink">用 RSS 接收每周的好消息</h2>
           <p class="mt-2 max-w-2xl text-sm leading-6 text-muted">
-            不需要算法推荐，也不需要社交平台。把今日好消息加入你的 RSS 阅读器，安静地接收更新。
+            不需要算法推荐，也不需要社交平台。把好消息周报加入你的 RSS 阅读器，安静地接收更新。
           </p>
         </div>
         <a class="text-sm font-medium text-primary hover:underline" href="/rss">查看 RSS 订阅</a>
@@ -75,7 +65,7 @@ const latestCount = newsModel.latest.length;
         <div>
           <h2 class="text-lg font-semibold text-ink">一起发现真实发生的好事</h2>
           <p class="mt-2 max-w-2xl text-sm leading-6 text-muted">
-            你看到的公益项目、身边善举、长期做好事的人，或者媒体里被忽略的建设性报道，都可以先作为线索提交。它们会经过核实，不会自动进入首页。
+            你看到的公益项目、身边善举、长期做好事的人，或者媒体里被忽略的建设性报道，都可以先作为线索提交。它们会经过核实，不会自动进入周报。
           </p>
         </div>
         <a class="shrink-0 rounded-sm border border-border bg-surface/80 px-4 py-2.5 text-sm font-medium text-ink transition hover:bg-surface-muted" href="/submit">

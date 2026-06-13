@@ -1,9 +1,8 @@
 ---
-import DateGroup from "@/components/DateGroup.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import WeeklyIssue from "@/components/WeeklyIssue.astro";
 import { topicDefinitions } from "@/lib/categories";
-import { groupNewsByDate } from "@/lib/dates";
-import { getNewsByTopic } from "@/lib/news";
+import { getAllWeeklyIssues } from "@/lib/weekly";
 import type { TopicSlug } from "@/lib/types";
 
 export function getStaticPaths() {
@@ -14,11 +13,15 @@ export function getStaticPaths() {
 }
 
 const { topic } = Astro.props;
-const items = await getNewsByTopic(topic.slug as TopicSlug);
-const groups = groupNewsByDate(items);
+const issues = (await getAllWeeklyIssues())
+  .map((issue) => ({
+    issue,
+    items: issue.items.filter((item) => item.topic === (topic.slug as TopicSlug)),
+  }))
+  .filter(({ items }) => items.length > 0);
 ---
 
-<BaseLayout title={`${topic.label} - 今日好消息`}>
+<BaseLayout title={`${topic.label} - 好消息周报`}>
   <section class="mx-auto grid max-w-5xl gap-8 px-4 py-8 sm:px-6 sm:py-10">
     <header class="border-b border-border pb-6">
       <p class="text-sm text-muted">主题分类</p>
@@ -34,11 +37,11 @@ const groups = groupNewsByDate(items);
     </header>
 
     {
-      groups.length === 0 ? (
+      issues.length === 0 ? (
         <p class="rounded-lg border border-dashed border-border bg-surface p-5 text-sm text-muted">这个主题暂时还没有入选条目。</p>
       ) : (
         <div class="grid gap-8">
-          {groups.map((group) => <DateGroup group={group} />)}
+          {issues.map(({ issue, items }) => <WeeklyIssue issue={issue} items={items} showWatchlist={false} />)}
         </div>
       )
     }

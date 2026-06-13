@@ -20,29 +20,29 @@ const roles = [
 ];
 ---
 
-<BaseLayout title="提交好消息线索 - 今日好消息">
+<BaseLayout title="提交好消息线索 - 好消息周报">
   <section class="mx-auto grid max-w-5xl gap-8 px-4 py-8 sm:px-6 sm:py-10">
     <header class="border-b border-border pb-7">
       <div class="max-w-3xl border-l-2 border-tertiary pl-4">
         <p class="text-sm text-muted">Community Leads</p>
         <h1 class="mt-2 text-3xl font-bold text-ink sm:text-4xl">提交好消息线索</h1>
         <p class="mt-4 text-base leading-8 text-muted">
-          如果你看到一个真实的人、项目、组织或小事正在让世界变好，可以把线索交给我们。这里收集的是线索，不会自动发布；进入首页和 RSS 的内容仍然需要核实。
+          如果你看到一个真实的人、项目、组织或小事正在让世界变好，可以把线索交给我们。这里收集的是线索，不会自动发布；进入周报和 RSS 的内容仍然需要核实。
         </p>
       </div>
     </header>
 
     <section class="grid gap-4 md:grid-cols-3">
       <article class="border-t border-border pt-4">
-        <h2 class="text-base font-semibold text-ink">今日精选</h2>
+        <h2 class="text-base font-semibold text-ink">周报精选</h2>
         <p class="mt-2 text-sm leading-6 text-muted">
-          需要公开来源、清楚事实和核实说明，才会进入首页时间线与 RSS。
+          需要公开来源、清楚事实和核实说明，才会进入周报与 RSS。
         </p>
       </article>
       <article class="border-t border-border pt-4">
-        <h2 class="text-base font-semibold text-ink">每日好人好事</h2>
+        <h2 class="text-base font-semibold text-ink">人和事线索</h2>
         <p class="mt-2 text-sm leading-6 text-muted">
-          可以是自述或目击的小事，但展示时会标注“自述”“目击”“未独立核实”等状态。
+          可以是自述、目击或视频线索，但需要标注来源关系和核实状态。
         </p>
       </article>
       <article class="border-t border-border pt-4">
@@ -209,8 +209,8 @@ const roles = [
     <section class="rounded-lg border border-border bg-surface-muted p-5">
       <h2 class="text-lg font-semibold text-ink">审核之后会怎样？</h2>
       <div class="mt-4 grid gap-3 text-sm leading-7 text-muted md:grid-cols-2">
-        <p><strong class="text-ink">已核实：</strong>可以进入今日精选、归档和 RSS。</p>
-        <p><strong class="text-ink">基本可信：</strong>未来可进入每日好人好事，但会标注来源和核实状态。</p>
+        <p><strong class="text-ink">已核实：</strong>可以进入周报、归档和 RSS。</p>
+        <p><strong class="text-ink">基本可信：</strong>可以进入待观察线索，但会标注来源和核实状态。</p>
         <p><strong class="text-ink">待补证据：</strong>事实具体，但还需要公开来源或更多说明。</p>
         <p><strong class="text-ink">不收录：</strong>无法核实、侵犯隐私、宣传营销或不符合项目边界。</p>
       </div>

@@ -1,6 +1,6 @@
 # Phase 04 · Weekly Pages And RSS
 
-Status: pending
+Status: awaiting review
 
 ## Goal
 
@@ -8,18 +8,26 @@ Change the public site from daily timeline reading to weekly issue reading.
 
 ## Tasks
 
-- [ ] Update `src/pages/index.astro` to render the latest weekly issue.
-- [ ] Add or adapt components for weekly issue sections while reusing
+- [x] Update `src/pages/index.astro` to render the latest weekly issue.
+- [x] Add or adapt components for weekly issue sections while reusing
   `NewsEntry.astro` where possible.
-- [ ] Update `src/pages/archive.astro` to list weekly issues.
-- [ ] Update `src/pages/rss.astro` copy from daily RSS to weekly RSS.
-- [ ] Update `src/pages/rss.xml.ts` to read weekly selected stories.
-- [ ] Update `src/pages/rss/[slug].xml.ts` to read weekly selected stories by
+- [x] Update `src/pages/archive.astro` to list weekly issues.
+- [x] Update `src/pages/rss.astro` copy from daily RSS to weekly RSS.
+- [x] Update `src/pages/rss.xml.ts` to read weekly selected stories.
+- [x] Update `src/pages/rss/[slug].xml.ts` to read weekly selected stories by
   topic.
-- [ ] Update `src/pages/submit.astro` copy to say leads may be considered for a
+- [x] Update `src/pages/submit.astro` copy to say leads may be considered for a
   future weekly issue.
-- [ ] Remove homepage language that says `今天`, `最近 24 小时`, or `今日时间线`.
-- [ ] Run `npx pnpm build` and inspect generated RSS XML.
+- [x] Remove homepage language that says `今天`, `最近 24 小时`, or `今日时间线`.
+- [x] Run `npx pnpm build` and inspect generated RSS XML.
+
+## Verification
+
+- `npx pnpm build` passed.
+- Browser checked homepage, archive, RSS page, and mobile homepage at
+  `http://localhost:4321/`.
+- `http://localhost:4321/rss.xml` returned valid RSS with 4 selected weekly
+  items.
 
 ## Acceptance
 
@@ -27,4 +35,3 @@ Change the public site from daily timeline reading to weekly issue reading.
 - Archive is week-first.
 - RSS remains valid XML.
 - Every selected story still shows source and verification text.
-

@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { site } from "@/lib/site";
 
 interface Props {
   title?: string;
@@ -7,12 +8,12 @@ interface Props {
 }
 
 const {
-  title = "今日好消息 - 每天一点真实发生的好消息",
-  description = "一个面向中文读者的开源公益好消息聚合网站，收集真实、具体、可验证的中外好消息，并提供 RSS 订阅。",
+  title = site.title,
+  description = site.description,
 } = Astro.props;
 
 const navItems = [
-  { href: "/", label: "今日" },
+  { href: "/", label: "周报" },
   { href: "/archive", label: "归档" },
   { href: "/rss", label: "RSS" },
   { href: "/about", label: "关于" },
@@ -35,8 +36,8 @@ const navItems = [
         aria-label="主导航"
       >
         <a href="/" class="flex min-w-0 flex-col leading-tight">
-          <span class="text-lg font-semibold tracking-normal text-ink">今日好消息</span>
-          <span class="text-xs text-muted">Good News Daily</span>
+          <span class="text-lg font-semibold tracking-normal text-ink">好消息周报</span>
+          <span class="text-xs text-muted">Good News Weekly</span>
         </a>
         <div class="flex flex-wrap items-center gap-1 text-sm text-muted">
           {

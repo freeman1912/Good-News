@@ -1,25 +1,25 @@
 ---
-import DateGroup from "@/components/DateGroup.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { getGroupedNews } from "@/lib/news";
+import WeeklyIssue from "@/components/WeeklyIssue.astro";
+import { getAllWeeklyIssues } from "@/lib/weekly";
 
-const groups = await getGroupedNews();
+const issues = await getAllWeeklyIssues();
 ---
 
-<BaseLayout title="往期归档 - 今日好消息">
+<BaseLayout title="往期归档 - 好消息周报">
   <section class="mx-auto grid max-w-5xl gap-8 px-4 py-8 sm:px-6 sm:py-10">
     <header class="border-b border-border pb-6">
       <p class="text-sm text-muted">Archive</p>
       <h1 class="mt-2 text-3xl font-bold text-ink sm:text-4xl">往期归档</h1>
-      <p class="mt-4 max-w-2xl text-base leading-8 text-muted">按日期回看过去收录的好消息。</p>
+      <p class="mt-4 max-w-2xl text-base leading-8 text-muted">按周回看过去发布的好消息周报。</p>
     </header>
 
     {
-      groups.length === 0 ? (
-        <p class="rounded-lg border border-dashed border-border bg-surface p-5 text-sm text-muted">还没有更早的归档。</p>
+      issues.length === 0 ? (
+        <p class="rounded-lg border border-dashed border-border bg-surface p-5 text-sm text-muted">还没有发布过周报。</p>
       ) : (
         <div class="grid gap-8">
-          {groups.map((group) => <DateGroup group={group} />)}
+          {issues.map((issue) => <WeeklyIssue issue={issue} showWatchlist={false} />)}
         </div>
       )
     }
