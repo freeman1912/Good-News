@@ -3,7 +3,7 @@
   "weekStart": "2026-06-08",
   "weekEnd": "2026-06-14",
   "title": "有人在把生活重新接上",
-  "intro": "这一周先从历史候选池里挑出几件更接近周报气质的事：学校把孩子带进公共协商，社区用不羞辱人的方式解决吃饭，公共服务没有放弃最难触达的人，自然修复也在慢慢发生。",
+  "intro": "这一期先从历史候选池里挑出几件更接近周报气质的事：学校把孩子带进公共协商，社区用不羞辱人的方式解决吃饭，公共服务没有放弃最难触达的人，也有城市和岛屿在认真回应年轻人、自然和公共生活。",
   "publishedAt": "2026-06-13T00:00:00.000Z",
   "items": [
     {
@@ -77,6 +77,42 @@
       "status": "published",
       "mediaType": "article",
       "weeklyNote": "这条有“世界还能被修补”的感觉，也能被普通读者理解。"
+    },
+    {
+      "id": "positive-news-a238ba6626a7",
+      "title": "英国怀特岛把自然变成节日主角",
+      "summary": "Positive News 报道，英国怀特岛的 Biosphere Festival 用海滩清洁、野生动物散步、社区艺术和自然学习活动，取代传统商业音乐节的大舞台，把当地联合国教科文组织生物圈保护区变成一次社区共同参与的节日。",
+      "region": "world",
+      "topic": "environment-animals",
+      "sourceName": "Positive News",
+      "sourceUrl": "https://www.positive.news/",
+      "originalUrl": "https://www.positive.news/environment/the-island-festival-putting-nature-before-acts/",
+      "publishedAt": "2026-06-09T05:00:31.000Z",
+      "collectedAt": "2026-06-09T05:24:33.782Z",
+      "whyGood": "它把“保护自然”从抽象口号变成普通人能参加的散步、清洁、学习和社区活动，也让低成本、在地化的公共文化有了一个可感的样子。",
+      "verificationNote": "来源为 Positive News 2026 年 6 月 9 日报道，文中列出节日时间、活动类型、组织方式和资金来源，并链接到 Isle of Wight Biosphere Festival 项目页面；当前按单一媒体来源收录。",
+      "sourceCount": 1,
+      "status": "published",
+      "mediaType": "article",
+      "weeklyNote": "提醒我们，好事不一定轰轰烈烈；有时是一个地方把自然、社区和公共生活重新连起来。"
+    },
+    {
+      "id": "reasons-to-be-cheerful-b3172a45dbc2",
+      "title": "乌干达马萨卡市设立青年服务台",
+      "summary": "Reasons to be Cheerful 报道，乌干达马萨卡市在市政厅设立 Youth Desk，让年轻人能直接提出就业、创业、道路照明、社区安全等诉求，并把他们连接到职业培训、资金项目和社区对话。",
+      "region": "world",
+      "topic": "public-improvement",
+      "sourceName": "Reasons to be Cheerful",
+      "sourceUrl": "https://reasonstobecheerful.world/",
+      "originalUrl": "https://reasonstobecheerful.world/masaka-youth-desk/",
+      "publishedAt": "2026-06-12T08:00:36.000Z",
+      "collectedAt": "2026-06-12T09:35:27.138Z",
+      "whyGood": "这条好消息的重点不是城市问题已经全部解决，而是年轻人不用只在门外抱怨：他们有一个可以被听见、被记录、被连接到机会的入口。",
+      "verificationNote": "来源为 Reasons to be Cheerful 2026 年 6 月 12 日报道，包含马萨卡市 Youth Desk 的创建背景、工作人员、青年个案和市长采访；属于单一媒体来源，后续可补充当地政府或项目资料。",
+      "sourceCount": 1,
+      "status": "published",
+      "mediaType": "article",
+      "weeklyNote": "这条适合周报，因为它让人看见公共治理也可以从一个小窗口开始：先认真听见年轻人的具体问题。"
     }
   ],
   "watchlist": [
