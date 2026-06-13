@@ -1,0 +1,94 @@
+name: Weekly Good News Review
+
+on:
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "Optional ISO-like week id, for example 2026-W24. Defaults to previous week in Asia/Shanghai."
+        required: false
+        type: string
+  schedule:
+    # Monday 20:30 Asia/Shanghai, for the previous Monday-Sunday window.
+    - cron: "30 12 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  weekly-review:
+    runs-on: ubuntu-latest
+    env:
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
+      DEEPSEEK_BASE_URL: ${{ vars.DEEPSEEK_BASE_URL }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+      AI_MAX_TOKENS: ${{ vars.AI_MAX_TOKENS }}
+      PUBLIC_SITE_URL: ${{ vars.PUBLIC_SITE_URL }}
+      PUBLIC_GITHUB_ISSUE_URL: ${{ vars.PUBLIC_GITHUB_ISSUE_URL }}
+      WEEKLY_ISSUE_ID: ${{ github.event.inputs.week }}
+      ALLOW_AUTOPUBLISH: "false"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.5.2
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Resolve final discovery date
+        id: discovery-date
+        run: echo "date=$(TZ=Asia/Shanghai date -d 'yesterday' +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: Refresh final daily discovery file
+        env:
+          AI_REQUEST_TIMEOUT_MS: 20000
+          AI_SCORE_CONCURRENCY: 4
+        run: pnpm trial:daily -- --date "${{ steps.discovery-date.outputs.date }}" --skip-publish-ai-draft
+
+      - name: Generate weekly review draft
+        run: pnpm weekly:draft
+
+      - name: Verify build
+        run: pnpm build
+
+      - name: Create weekly review pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: automation/good-news-weekly-review
+          delete-branch: true
+          title: "chore: prepare weekly good news review"
+          commit-message: "chore: prepare weekly good news review"
+          add-paths: |
+            data/candidates/**
+            data/manual/**
+            data/rejected/**
+            data/trials/**
+            data/weekly-drafts/**
+          body: |
+            This PR was created by the weekly review workflow.
+
+            It refreshes the final daily discovery file for the previous
+            Monday-Sunday window, generates a weekly AI-assisted draft, and
+            verifies the static build.
+
+            It does not publish to `data/weekly/` automatically. Review the
+            original links in `data/trials/*-weekly-review.md`, edit
+            `data/weekly-drafts/*.ai-draft.json`, and publish only after human
+            approval.
+          labels: |
+            automation
+            weekly-review
+            needs-review

@@ -1,4 +1,4 @@
-name: Ingest Good News
+name: Daily Good News Discovery
 
 on:
   workflow_dispatch:
@@ -21,6 +21,7 @@ jobs:
       AI_MAX_TOKENS: ${{ vars.AI_MAX_TOKENS }}
       PUBLIC_SITE_URL: ${{ vars.PUBLIC_SITE_URL }}
       PUBLIC_GITHUB_ISSUE_URL: ${{ vars.PUBLIC_GITHUB_ISSUE_URL }}
+      ALLOW_AUTOPUBLISH: "false"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -47,7 +48,7 @@ jobs:
         env:
           AI_REQUEST_TIMEOUT_MS: 20000
           AI_SCORE_CONCURRENCY: 4
-        run: pnpm trial:daily -- --date "${{ steps.ingest-date.outputs.date }}"
+        run: pnpm trial:daily -- --date "${{ steps.ingest-date.outputs.date }}" --skip-publish-ai-draft
 
       - name: Verify build
         run: pnpm build
@@ -56,19 +57,26 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: automation/good-news-ingest
+          branch: automation/good-news-discovery
           delete-branch: true
-          title: "chore: publish daily good news"
-          commit-message: "chore: publish daily good news"
+          title: "chore: collect daily good news candidates"
+          commit-message: "chore: collect daily good news candidates"
+          add-paths: |
+            data/candidates/**
+            data/manual/**
+            data/rejected/**
+            data/trials/**
           body: |
             This PR was created by the scheduled ingestion workflow.
 
-            It runs the daily trial flow, writes homepage/RSS data, and keeps
-            Chinese leads as review-only tasks unless they meet publication
-            standards in a future pipeline.
+            It runs the daily discovery flow and writes candidate, rejected,
+            manual draft, China-lead, and review-note artifacts only.
 
             It does not publish reader-submitted GitHub Issues automatically.
-            Review `data/news/`, `data/candidates/`, `data/rejected/`, and
+            It also does not update the public homepage/RSS data; weekly
+            publishing is handled by the weekly review workflow.
+
+            Review `data/candidates/`, `data/manual/`, `data/rejected/`, and
             `data/trials/` before merging.
           labels: |
             automation

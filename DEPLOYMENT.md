@@ -12,26 +12,42 @@ pnpm dev
 pnpm build
 pnpm lint
 pnpm typecheck
-pnpm ingest
+pnpm trial:daily -- --date YYYY-MM-DD --skip-publish-ai-draft
+pnpm weekly:draft -- --week YYYY-Www
 ```
 
-`pnpm ingest` runs the conservative ingestion pipeline:
+`pnpm trial:daily -- --skip-publish-ai-draft` runs the conservative discovery
+pipeline:
 
 1. Fetch RSS candidates from `data/sources/sources.yaml`.
 2. Dedupe and normalize candidates.
 3. Score candidates with AI when DeepSeek or OpenAI-compatible credentials are configured.
-4. Route items into `data/candidates/`, `data/rejected/`, and only when explicitly allowed, `data/news/`.
+4. Route items into `data/candidates/`, `data/rejected/`, `data/manual/`, and
+   `data/trials/`.
+
+Daily discovery does not update the public homepage or RSS in weekly mode.
+Public content comes from reviewed weekly issue files in `data/weekly/`.
 
 Without OpenAI credentials, candidates are not auto-published. This is expected.
 Manual publishing still works:
 
 ```bash
 pnpm ingest:fetch
-pnpm ingest:publish-manual -- --date YYYY-MM-DD
+pnpm ingest:publish-manual -- --date YYYY-MM-DD --file data/manual/YYYY-MM-DD.ai-draft.json
 ```
 
-The manual command reads `data/manual/YYYY-MM-DD.json`, validates each draft
+The manual command reads `data/manual/YYYY-MM-DD.ai-draft.json`, validates each draft
 against the fetched candidate pool, and writes `data/news/YYYY-MM-DD.json`.
+
+Weekly draft and publish commands:
+
+```bash
+pnpm weekly:draft -- --week YYYY-Www
+pnpm weekly:publish -- --week YYYY-Www --file data/weekly-drafts/YYYY-Www.ai-draft.json
+```
+
+`weekly:draft` writes review artifacts only. `weekly:publish` writes
+`data/weekly/YYYY-Www.json` and should be run only after human review.
 
 For low-cost local AI testing, use a small scoring sample first:
 
@@ -116,12 +132,49 @@ merging content or code changes.
 
 ## GitHub Actions
 
-The ingestion workflow is in `.github/workflows/ingest.yml`.
+Daily discovery is in `.github/workflows/ingest.yml`.
 
 Triggers:
 
-- Daily schedule
+- Daily schedule at 07:20 Asia/Shanghai
 - Manual `workflow_dispatch`
+
+The daily workflow runs:
+
+```bash
+pnpm trial:daily -- --date YYYY-MM-DD --skip-publish-ai-draft
+pnpm build
+```
+
+It opens a review PR with discovery artifacts from:
+
+- `data/candidates/`
+- `data/manual/`
+- `data/rejected/`
+- `data/trials/`
+
+It intentionally does not include `data/news/` and does not change the public
+weekly homepage.
+
+Weekly review is in `.github/workflows/weekly.yml`.
+
+Triggers:
+
+- Monday 20:30 Asia/Shanghai, for the previous Monday-Sunday window
+- Manual `workflow_dispatch` with optional `week`, for example `2026-W24`
+
+The weekly workflow refreshes the final daily discovery file, runs
+`pnpm weekly:draft`, verifies `pnpm build`, and opens a PR containing review
+artifacts from:
+
+- `data/candidates/`
+- `data/manual/`
+- `data/rejected/`
+- `data/trials/`
+- `data/weekly-drafts/`
+
+It does not write `data/weekly/` automatically. Review the original links,
+edit the weekly draft if needed, then run `pnpm weekly:publish` after approval.
 
 Recommended GitHub secret for low-cost automated AI scoring:
 
@@ -158,6 +211,7 @@ The workflow creates a pull request through `peter-evans/create-pull-request`. I
 
 - Reader-submitted GitHub Issues never auto-publish.
 - `ALLOW_AUTOPUBLISH` is false by default.
+- Daily discovery and weekly review workflows both set `ALLOW_AUTOPUBLISH=false`.
 - Watch-level and official-risk sources do not auto-publish.
 - AI output must pass schema validation before routing.
 - RSS content includes summaries and verification notes, not full copied articles.
