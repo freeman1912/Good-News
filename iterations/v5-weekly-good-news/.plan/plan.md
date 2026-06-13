@@ -29,7 +29,7 @@ Do not:
 
 | Phase | Goal | Status |
 | --- | --- | --- |
-| 01-spec-sync | Update specs, copy direction, and editorial rules for weekly publishing | pending |
+| 01-spec-sync | Update specs, copy direction, and editorial rules for weekly publishing | awaiting review |
 | 02-weekly-data-model | Add weekly issue types, readers, sample data, and unit-level helpers | pending |
 | 03-weekly-draft-publish | Add weekly draft and publish scripts | pending |
 | 04-weekly-pages-rss | Render weekly homepage, archive, RSS, and submit copy | pending |
@@ -54,4 +54,3 @@ Stop for review after:
 - Phase 03, because it defines the editorial automation behavior.
 - Phase 04, because it changes the public reader experience.
 - Phase 06, before pushing/deploying.
-

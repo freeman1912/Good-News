@@ -1,6 +1,6 @@
 # Phase 01 · Spec Sync
 
-Status: pending
+Status: awaiting review
 
 ## Goal
 
@@ -9,15 +9,16 @@ uses weekly language and weekly editorial standards.
 
 ## Tasks
 
-- [ ] Update `BRIEF.md` from daily timeline wording to weekly brief wording.
-- [ ] Update `SOURCE_STRATEGY.md` daily rhythm section to weekly rhythm.
-- [ ] Update `DAILY_RUNBOOK.md` or create `WEEKLY_RUNBOOK.md` so operators know
+- [x] Update `BRIEF.md` from daily timeline wording to weekly brief wording.
+- [x] Update `SOURCE_STRATEGY.md` daily rhythm section to weekly rhythm.
+- [x] Update `DAILY_RUNBOOK.md` or create `WEEKLY_RUNBOOK.md` so operators know
   daily ingestion is discovery and weekly publishing is public.
-- [ ] Update `README.md` to describe weekly public publishing.
-- [ ] Keep `ARCHITECTURE.md` in sync where it describes ingestion and scheduled
+- [x] Update `README.md` to describe weekly public publishing.
+- [x] Keep `ARCHITECTURE.md` in sync where it describes ingestion and scheduled
   publishing.
-- [ ] Run `npx pnpm typecheck` to catch accidental Markdown import or config
+- [x] Run `npx pnpm typecheck` to catch accidental Markdown import or config
   issues.
+- [ ] Maintainer confirms the new weekly wording feels right.
 
 ## Acceptance
 
@@ -26,4 +27,3 @@ uses weekly language and weekly editorial standards.
 - Science/technology criteria mention human meaning and ordinary-reader
   understandability.
 - Video leads are documented as non-automatic, verification-gated leads.
-

@@ -4,7 +4,9 @@ This project should feel warm, but the source strategy is intentionally strict. 
 
 ## Why AI API Keys Are Optional
 
-The website and RSS feeds do not need an AI API key. They read structured JSON from `data/news/` and can be built entirely offline.
+The website and RSS feeds do not need an AI API key. The current daily prototype
+reads structured JSON from `data/news/`; the weekly product will read reviewed
+weekly issue data from `data/weekly/`. Both can be built entirely offline.
 
 DeepSeek, OpenAI, or another compatible model is only useful for the ingestion assistant layer:
 
@@ -13,7 +15,9 @@ DeepSeek, OpenAI, or another compatible model is only useful for the ingestion a
 - flagging propaganda, soft-ad, and vague inspirational content;
 - drafting `whyGood` and `verificationNote` for human review.
 
-Without an API key, the project should use manual curation: fetch links, read candidates, write Chinese summaries by hand, then publish with `pnpm ingest:publish-manual -- --date YYYY-MM-DD`.
+Without an API key, the project should use manual curation: fetch links, read
+candidates, write Chinese summaries by hand, then publish a reviewed weekly
+issue.
 
 ## Input Discovery vs Reader RSS
 
@@ -24,7 +28,7 @@ Reader-facing output:
 
 - `/rss.xml`
 - topic RSS feeds
-- future daily good-news RSS digest
+- weekly good-news RSS updates
 
 Upstream discovery can use many methods:
 
@@ -51,7 +55,7 @@ These are the best starting points because their editorial mission already overl
 - Reasons to be Cheerful
 - YES! Magazine (selective archive/monthly source, not a daily source)
 
-Use Good News Network, Positive News, and Reasons to be Cheerful for daily RSS discovery.
+Use Good News Network, Positive News, and Reasons to be Cheerful for regular discovery.
 Use YES! selectively because it has shifted away from regular publication and is better treated as a solutions-journalism archive or occasional lead source. Still check whether an item is concrete, recent, and not just opinion or inspirational commentary.
 
 ### Tier B · Discovery and Watch Sources
@@ -121,7 +125,9 @@ Use official RSS endpoints first, then search/manual discovery, then RSSHub only
 as an optional self-hosted adapter when the route is stable. Public RSSHub
 instances should not become the only production dependency.
 
-These sources are not daily auto-ingestion sources yet. Use them through manual search, reader submissions, or later search APIs. Publish only after original links and claims are checked.
+These sources are not automatic publication sources. Use them through discovery
+runs, manual search, reader submissions, or later search APIs. Publish only
+after original links and claims are checked.
 
 For the full Chinese workflow, read `CHINA_SOURCE_PLAYBOOK.md`. Chinese
 discovery should be treated as a lead pipeline:
@@ -200,18 +206,20 @@ Accept an item only when most answers are yes:
 
 - Is there a specific person, group, place, project, result, or measurable change?
 - Can the reader click through to the original source?
-- Is the event recent enough for a daily timeline?
-- Does the item describe a real improvement, act of help, scientific progress, public-service improvement, environmental repair, or cultural/education benefit?
+- Is the event recent enough for the weekly issue or still meaningful in the week being reviewed?
+- Can ordinary Chinese readers understand why it matters without specialist background?
+- Does the item describe a real improvement, act of help, scientific progress with human meaning, public-service improvement, environmental repair, exploration, or cultural/education benefit?
 - Can the summary be written without slogans or emotional manipulation?
 - If the source is official, commercial, or advocacy-heavy, is there cross-verification?
 - For Chinese sources, is the result already visible? If not, is there a concrete follow-up question?
+- Does the story leave useful aftertaste: "someone is doing the work; there is still hope"?
 
 Reject or hold when:
 
 - the story is unverifiable;
 - it is mainly a slogan, ceremony, award, or leadership praise;
 - it is mostly a brand campaign;
-- it overstates early research;
+- it overstates early research or narrow technical progress without explaining human meaning;
 - it depends on graphic bad-news framing for emotional effect;
 - it has no concrete public value beyond "this feels nice";
 - the original source cannot be found.
@@ -268,18 +276,27 @@ publish dramatic rescue footage while an incident is ongoing, and do not expose
 rescued people's private details. A rescue story should have a clear organization
 identity, completed outcome, and privacy-safe evidence.
 
-## Daily Operating Rhythm
+## Weekly Operating Rhythm
 
-1. Fetch candidates from the fixed source pool.
+Daily automation is an input layer, not the public product. It can fetch,
+score, reject, and collect follow-up leads, but the reader-facing output should
+be a weekly issue.
+
+1. Fetch candidates from the fixed source pool every day or on demand.
 2. Run DeepSeek scoring when `DEEPSEEK_API_KEY` is configured.
-3. Review the AI candidate pool, not the full raw feed.
-4. Read original articles for the final picks.
-5. Check primary or secondary sources for higher-risk claims.
-6. Write Chinese title, summary, why-good note, and verification note.
-7. Publish 8-12 items when quality allows; publish fewer when the day is thin.
-8. Build the site and inspect `/`, `/rss`, and `/rss.xml`.
+3. Export daily candidate, rejected, fetch-error, and Chinese lead files.
+4. On Monday evening, collect the previous Monday-Sunday candidate pool.
+5. Deduplicate repeated stories across days.
+6. Ask AI to draft a small weekly review pool using the weekly editorial
+   standard: ordinary-reader clarity, human meaning, visible result, source
+   trail, and aftertaste.
+7. Review the weekly draft, open original links, and hold anything that feels
+   abstract, promotional, unverifiable, or too narrow.
+8. Publish the weekly issue only when the selected items remain strong.
+9. Build the site and inspect `/`, `/rss`, and `/rss.xml`.
 
-The number is a target, not a quota. Empty or short days are acceptable.
+There is no fixed story count. A strong week can publish more items; a thin week
+can publish fewer or none.
 
 ## DeepSeek Triage Rules
 
@@ -289,7 +306,8 @@ Chinese summaries and scores, but publication still needs human reading.
 Current routing rules:
 
 - Reject items with very low specificity, evidence, or public value.
-- Reject stale items older than about 45 days for the daily candidate pool.
+- Reject stale items older than about 45 days for the candidate pool unless they
+  are part of a meaningful weekly follow-up or profile.
 - Treat `watch` sources strictly: if evidence or public value is not high enough, reject.
 - Never auto-publish when `ALLOW_AUTOPUBLISH=false`.
 - Use `INGEST_SCORE_LIMIT` for small paid tests before scoring a full day.
