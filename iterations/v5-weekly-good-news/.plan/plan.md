@@ -30,7 +30,7 @@ Do not:
 | Phase | Goal | Status |
 | --- | --- | --- |
 | 01-spec-sync | Update specs, copy direction, and editorial rules for weekly publishing | awaiting review |
-| 02-weekly-data-model | Add weekly issue types, readers, sample data, and unit-level helpers | pending |
+| 02-weekly-data-model | Add weekly issue types, readers, sample data, and unit-level helpers | completed |
 | 03-weekly-draft-publish | Add weekly draft and publish scripts | pending |
 | 04-weekly-pages-rss | Render weekly homepage, archive, RSS, and submit copy | pending |
 | 05-weekly-automation | Add weekly scheduled workflow and keep daily ingestion as discovery | pending |

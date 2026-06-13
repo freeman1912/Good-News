@@ -1,0 +1,92 @@
+{
+  "id": "2026-W24",
+  "weekStart": "2026-06-08",
+  "weekEnd": "2026-06-14",
+  "title": "有人在把生活重新接上",
+  "intro": "这一周先从历史日更数据里挑出几件更接近周报气质的事：学校把孩子带进公共协商，社区用不羞辱人的方式解决吃饭，公共服务没有放弃最难触达的人，自然修复也在慢慢发生。",
+  "publishedAt": "2026-06-13T00:00:00.000Z",
+  "items": [
+    {
+      "id": "positive-news-0fb4cb97ff53",
+      "title": "英国一些学校让学生参与学校治理",
+      "summary": "Positive News 报道，英国部分学校正在通过学生议会、课堂讨论和学校决策参与机制，让孩子对校园生活和规则有更多发言权，项目希望在日常教育里训练民主参与能力。",
+      "region": "world",
+      "topic": "education-culture",
+      "sourceName": "Positive News",
+      "sourceUrl": "https://www.positive.news/",
+      "originalUrl": "https://www.positive.news/society/democracy/why-children-are-being-given-a-say-in-how-their-school-is-run/",
+      "publishedAt": "2026-06-03T09:40:08.000Z",
+      "collectedAt": "2026-06-08T05:11:43.286Z",
+      "whyGood": "这不是抽象地喊“培养公民意识”，而是把孩子带进真实的学校治理场景，让他们从小练习表达、协商和共同负责。",
+      "verificationNote": "来源为 Positive News 的专题报道，信息具体到英国学校项目和采访对象；当前为单一媒体来源，后续如正式长期收录，应补充项目方或学校公开资料交叉核实。",
+      "sourceCount": 1,
+      "status": "published",
+      "mediaType": "article",
+      "weeklyNote": "这条适合作为周报样本，因为它能让普通读者看见：公共生活不是成年后突然发生的事，也可以从学校里一点点练习。"
+    },
+    {
+      "id": "positive-news-cbf3c5d1f3d3",
+      "title": "英格兰一家按能力付费餐厅把吃饭变成社区互助",
+      "summary": "Positive News 报道，英格兰 Stroud 的一家 pay-as-you-can 餐厅在 Brimscombe Mill 运营，让顾客按能力支付，同时把本地食物、社区活动和互助空间结合起来。",
+      "region": "world",
+      "topic": "charity-mutual-aid",
+      "sourceName": "Positive News",
+      "sourceUrl": "https://www.positive.news/",
+      "originalUrl": "https://www.positive.news/society/come-dine-with-us/",
+      "publishedAt": "2026-05-27T09:00:07.000Z",
+      "collectedAt": "2026-06-08T05:11:43.286Z",
+      "whyGood": "它把“有人请不起一顿体面饭”这个问题，用一种不羞辱人的方式放进社区日常里解决：能多付的人多付，困难的人也能留下来吃饭。",
+      "verificationNote": "来源为 Positive News 现场报道，包含地点、运营方式和社区场景；当前按单一来源收录，后续可补充餐厅/项目官网或本地报道。",
+      "sourceCount": 1,
+      "status": "published",
+      "mediaType": "article",
+      "weeklyNote": "这条有普通人能理解的好处：它不是宏大口号，而是让一顿饭保留尊严。"
+    },
+    {
+      "id": "reasons-to-be-cheerful-4b981db0e438",
+      "title": "加州用长期外展支持重性精神疾病居民",
+      "summary": "Reasons to be Cheerful 报道，加州一线社工和相关项目会持续接触重性精神疾病、无家可归或危机中的居民，有时需要多年建立信任，再把人连接到治疗和生活支持。",
+      "region": "world",
+      "topic": "public-improvement",
+      "sourceName": "Reasons to be Cheerful",
+      "sourceUrl": "https://reasonstobecheerful.world/",
+      "originalUrl": "https://reasonstobecheerful.world/care-court-california-mental-illness/",
+      "publishedAt": "2026-06-04T08:00:41.000Z",
+      "collectedAt": "2026-06-08T05:11:43.286Z",
+      "whyGood": "这条消息的好处不在于问题被轻松解决，而在于公共服务没有放弃最难触达的人，愿意用长期、反复、低姿态的方式靠近他们。",
+      "verificationNote": "来源为 Reasons to be Cheerful 的建设性报道，包含加州个案和公共服务项目描述；涉及心理健康和公共政策，正式采用前应继续查验项目制度和地方公开资料。",
+      "sourceCount": 1,
+      "status": "published",
+      "mediaType": "article",
+      "weeklyNote": "这条接近周报想要的余温：不是问题消失了，而是有人愿意把最难的人继续接住。"
+    },
+    {
+      "id": "reasons-to-be-cheerful-e73c1299f449",
+      "title": "新墨西哥吉拉河正在恢复更自然的河流形态",
+      "summary": "Reasons to be Cheerful 报道，曾被严重渠化的新墨西哥吉拉河正在通过让河流重新连接漫滩、恢复湿地和自然水文过程，成为美国西南部河流修复的一个案例。",
+      "region": "world",
+      "topic": "environment-animals",
+      "sourceName": "Reasons to be Cheerful",
+      "sourceUrl": "https://reasonstobecheerful.world/",
+      "originalUrl": "https://reasonstobecheerful.world/letting-a-river-act-like-a-river/",
+      "publishedAt": "2026-05-29T08:00:45.000Z",
+      "collectedAt": "2026-06-08T05:11:43.286Z",
+      "whyGood": "它提醒我们，修复环境有时不是建更多硬设施，而是给自然系统重新活动的空间，让河流像河流一样工作。",
+      "verificationNote": "来源为 Reasons to be Cheerful 转述 New Mexico Rivers Rising 的报道，属于建设性环境报道；后续可补充原报道、地方水文或保护组织资料交叉核实。",
+      "sourceCount": 2,
+      "status": "published",
+      "mediaType": "article",
+      "weeklyNote": "这条有“世界还能被修补”的感觉，也能被普通读者理解。"
+    }
+  ],
+  "watchlist": [
+    {
+      "id": "positive-news-91ff18eb899e",
+      "title": "格陵兰海域海藻森林研究提示新的蓝碳潜力",
+      "reason": "科学意义不错，但目前更像研究线索，正式进入周报前应补充论文或研究机构来源，并讲清它和气候修复的现实关系。",
+      "sourceName": "Positive News",
+      "sourceUrl": "https://www.positive.news/environment/greenland-sheds-new-light-on-underwater-carbon-sink/",
+      "followUpQuestion": "这项研究是否有论文或机构页面可以核实，宏藻蓝碳潜力是否已经有可解释的现实修复意义？"
+    }
+  ]
+}

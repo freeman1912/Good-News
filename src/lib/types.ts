@@ -106,6 +106,33 @@ export interface PublishedNewsItem {
   isExample?: boolean;
 }
 
+export type WeeklyMediaType = "article" | "video" | "report" | "other";
+
+export interface WeeklyGoodNewsItem extends PublishedNewsItem {
+  weeklyNote?: string;
+  mediaType?: WeeklyMediaType;
+}
+
+export interface WeeklyWatchItem {
+  id: string;
+  title: string;
+  reason: string;
+  sourceName?: string;
+  sourceUrl?: string;
+  followUpQuestion: string;
+}
+
+export interface WeeklyIssue {
+  id: string;
+  weekStart: string;
+  weekEnd: string;
+  title: string;
+  intro: string;
+  items: WeeklyGoodNewsItem[];
+  watchlist?: WeeklyWatchItem[];
+  publishedAt?: string;
+}
+
 export interface NewsDateGroup {
   date: string;
   label: string;
