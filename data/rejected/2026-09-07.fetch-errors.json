@@ -1,0 +1,16 @@
+[
+  {
+    "sourceId": "thepaper-watch",
+    "sourceName": "澎湃新闻",
+    "url": "https://www.thepaper.cn/",
+    "error": "HTTP 403 Forbidden",
+    "fetchedAt": "2026-09-07T17:50:34.111Z"
+  },
+  {
+    "sourceId": "chinadialogue-zh",
+    "sourceName": "中外对话",
+    "url": "https://dialogue.earth/zh/",
+    "error": "HTTP 403 Forbidden",
+    "fetchedAt": "2026-09-07T17:50:34.111Z"
+  }
+]
